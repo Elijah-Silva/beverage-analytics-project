@@ -15,7 +15,7 @@ This serves as my capstone portfolio project to transition from **Data Analyst �
 ---
 
 ## 🏗️ Architecture  
-![Architecture Diagram](docs/architecture.png)  
+Architecture Diagram (png here once complete) 
 
 - **Source:** Beverage entries (manual via Streamlit UI) + external weather API  
 - **Storage:** Postgres OLTP  
@@ -33,7 +33,7 @@ This serves as my capstone portfolio project to transition from **Data Analyst �
   - ![OLTP ERD](docs/erd_oltp.png)  
 
 - **Star Schema**  
-  - ![Star ERD](docs/erd_star.png)  
+  - Star ERD (png here once complete)
   - Fact: `fact_consumption`  
   - Dimensions: `dim_beverage`, `dim_user`, `dim_time`, `dim_weather`, `dim_location`  
 
@@ -53,16 +53,18 @@ This serves as my capstone portfolio project to transition from **Data Analyst �
 ---
 
 ## 📂 Repository Structure
+```
 beverage-analytics-project/
-├── docs/ # Diagrams, ADRs, governance notes
-├── sql/ # DDL, sample queries
-├── dbt/ # dbt project
-├── streamlit_app/ # Streamlit UI
-├── ingestion/ # API ingestion scripts
-├── orchestration/ # Airflow/Prefect DAGs
-├── monitoring/ # Data quality + observability
-├── docker/ # Containerization configs
+├── docs/              # Diagrams, ADRs, governance notes
+├── sql/               # DDL, sample queries
+├── dbt/               # dbt project
+├── streamlit_app/     # Streamlit UI
+├── ingestion/         # API ingestion scripts
+├── orchestration/     # Airflow/Prefect DAGs
+├── monitoring/        # Data quality + observability
+├── docker/            # Containerization configs
 └── README.md
+```
 
 ---
 
@@ -123,3 +125,4 @@ This project demonstrates skills for:
 - **Analytics Engineer** → dbt modeling, star schema, testing, dashboarding  
 - **Data Engineer** → pipelines, orchestration, CI/CD, monitoring, cloud warehouse  
 - **Data Architect** → schema design, ADRs, governance, system architecture  
+

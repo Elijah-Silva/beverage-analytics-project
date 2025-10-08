@@ -5,18 +5,26 @@
     <file url="file://$PROJECT_DIR$/sql/bootstrap/000_create_schemas.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/locations/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/locations/010_load_from_stage.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/products/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/products/010_load_from_stage.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/vendors/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/locations/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/locations/010_load.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/products/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/products/010_load.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/vendors/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/vendors/010_load.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/ref/000_ref_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/ref/010_seed_static_lookups.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/ref/020_seed_country_codes.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/ref/030_seed_currency_codes.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/ref/040_seed_processing_methods.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/ref/050_seed_varietals.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/000_schema.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/locations/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/locations/010_load_from_raw.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/products/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/products/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/vendors/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/testing/099_dml.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />

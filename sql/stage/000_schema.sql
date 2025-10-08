@@ -3,38 +3,6 @@
 -- Purpose: Initialize database structure
 -- =============================================
 
----------------------
--- validation tables
-
-
----------------------
--- core lookup tables
-
-
-CREATE TABLE products (
-	product_id 			INT 		GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-	product_name 		TEXT 		NOT NULL,
-	product_type_id 	INT 		NOT NULL,
-	vendor_id 			INT 		NOT NULL,
-	is_active 			BOOLEAN 	NOT NULL DEFAULT TRUE,
-	created_date 		TIMESTAMPTZ	NOT NULL DEFAULT now(),
-	last_modified_date 	TIMESTAMPTZ	NOT NULL DEFAULT now(),
-	notes				TEXT,
-	FOREIGN KEY (product_type_id) REFERENCES product_types (product_type_id),
-	FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id)
-);
-
-
-CREATE TABLE locations (
-	location_id 		INT 			GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-	address				TEXT			NOT NULL,
-	city				TEXT			NOT NULL,
-	state				TEXT			NOT NULL,
-	country_code_id		INT				NOT NULL,
-  	latitude        	NUMERIC(9,6)	NOT NULL CHECK (latitude  BETWEEN -90 AND 90),
-  	longitude       	NUMERIC(9,6)	NOT NULL CHECK (longitude BETWEEN -180 AND 180),
-	FOREIGN KEY (country_code_id) REFERENCES country_codes (country_code_id)
-);
 
 CREATE TABLE sessions (
 	session_id			INT			GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -132,40 +100,4 @@ CREATE TABLE product_countries (
  	country_code_id				INT 		NOT NULL,
  	FOREIGN KEY (product_id) REFERENCES products(product_id),
  	FOREIGN KEY (country_code_id) REFERENCES country_codes(country_code_id)
-);
-
-------------------------
--- product subtype tables
-
-CREATE TABLE product_coffee_details (
-	product_id				INT		PRIMARY KEY REFERENCES products (product_id),
-	roast_level				TEXT	NOT NULL CHECK (roast_level IN ('Light','Medium','Dark','Espresso')),
-	roast_date				DATE	NOT NULL,
-	origin_type				TEXT	NOT NULL CHECK (origin_type IN ('Single', 'Multi')),
-	varietal_id				INT,
-	altitude_meters			INT		CHECK (altitude_meters IS NULL OR altitude_meters >= 0),
-	processing_method_id	INT,
-	FOREIGN KEY (varietal_id) REFERENCES varietals (varietal_id),
-	FOREIGN KEY (processing_method_id) REFERENCES processing_methods (processing_method_id)
-);
-
-CREATE TABLE product_equipment_details (
-	product_id				INT		PRIMARY KEY REFERENCES products (product_id),
-	material_id				INT		NOT NULL,
-	volume					INT,
-	clay_type_id			INT,
-	pour_speed				INT,
-	color					TEXT	NOT NULL,
-	FOREIGN KEY (material_id) REFERENCES materials (material_id),
-	FOREIGN KEY (clay_type_id) REFERENCES clay_types (clay_type_id)
-);
-
-CREATE TABLE product_tea_details (
-	product_id				INT		PRIMARY KEY REFERENCES products (product_id),
-	tea_type				TEXT	NOT NULL CHECK (tea_type IN ('Green', 'White', 'Yellow', 'Oolong', 'Black', 'Puer (Shou)', 'Puer (Sheng)', 'Hei Cha', 'Herbal')),
-	harvest_year			INT,
-	storage_location		TEXT,
-	cultivar				TEXT,
-	processing_method_id	INT,
-	FOREIGN KEY (processing_method_id) REFERENCES processing_methods (processing_method_id)
 );

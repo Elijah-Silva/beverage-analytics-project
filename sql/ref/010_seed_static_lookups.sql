@@ -47,51 +47,6 @@ VALUES
 	('Faircup'),
 	('Cup');
 
-INSERT INTO varietals (varietal_name)
-VALUES
-	('Arabica'),
-	('Robusta'),
-	('Liberica'),
-	('Excelsa'),
-	('Yabukita'),
-	('Saemidori'),
-  	('Okumidori'),
-  	('Asatsuyu'),
-  	('Tieguanyin'),
- 	('Longjing'),
- 	('Da Hong Pao'),
-  	('Bai Mudan'),
-  	('Shou Mei'),
-  	('Sheng Pu-erh'),
-  	('Shou Pu-erh'),
- 	('Silver Needle'),
-	('Jin Jun Mei'),
-  	('Huangshan Maofeng'),
-  	('Sencha'),
-  	('Gyokuro'),
-	('Castillo');
-
-INSERT INTO processing_methods (processing_method_name)
-VALUES
-  	('Washed'),
-  	('Natural'),
-  	('Honey'),
-  	('Wet-Hulled'),
-  	('Anaerobic'),
-  	('Carbonic Maceration'),
-  	('Roasted'),
-  	('Steamed'),
-  	('Pan-Fired'),
-  	('Sun-Dried'),
-  	('Withered'),
-  	('Rolled'),
-  	('Oxidized'),
-  	('Fermented'),
-  	('Aged'),
-  	('Compressed'),
-  	('Blended'),
-	('Thermal Shock Washed');
-
 INSERT INTO materials (material_name, category)
 VALUES
   -- Ceramics

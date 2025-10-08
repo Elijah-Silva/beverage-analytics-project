@@ -2,6 +2,7 @@
 -- 099_dml.sql
 -- Purpose: Test tables
 -- =============================================
-SET search_path TO beverage;
+SET SEARCH_PATH = beverage;
 
-select * from product_types;
+select * from vendors;
+

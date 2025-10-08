@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/710fc8c2-f529-49e4-94fc-4c10e2da1aba/console.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/000_schema.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/010_seed_lookups.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/020_seed_parents.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/030_stage_products.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/031_transform_products.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/032_cleanup_staging.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+  </component>
+</project>

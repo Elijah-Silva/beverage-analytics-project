@@ -9,7 +9,13 @@
 \echo 'Running 020_seed_parents.sql...'
 \i sql/020_seed_parents.sql
 
-\echo 'Running 030_seed_children.sql...'
-\i sql/099_dml.sql
+\echo 'Running 030_stage_products.sql...'
+\i sql/030_stage_products.sql
+
+\echo 'Running 031_transform_products.sql...'
+\i sql/031_transform_products.sql
+
+\echo 'Running 032_cleanup_staging.sql...'
+\i sql/032_cleanup_staging.sql
 
 \echo '✅ All scripts completed successfully.'

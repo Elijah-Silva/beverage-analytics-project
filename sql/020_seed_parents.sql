@@ -44,6 +44,4 @@ select * from country_codes where lower(country_name) LIKE lower('%Canada%');
 select * from currency_codes where lower(currency_name) LIKE lower('%Cana%');
 */
 
--- Seed products table
-
 COMMIT;

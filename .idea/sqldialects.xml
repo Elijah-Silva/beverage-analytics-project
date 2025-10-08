@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/sql/000_schema.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/010_seed_lookups.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/020_seed_parents.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/030_stage_products.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/031_transform_products.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/032_cleanup_staging.sql" dialect="PostgreSQL" />
+    <file url="PROJECT" dialect="PostgreSQL" />
+  </component>
+</project>

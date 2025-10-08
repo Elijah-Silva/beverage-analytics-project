@@ -1,5 +1,5 @@
 -- =============================================
--- 010_beverage_seed_lookups.sql
+-- 010_seed_lookups.sql
 -- Purpose: Seed lookup tables (country, currency)
 -- =============================================
 
@@ -24,12 +24,12 @@ RESTART IDENTITY CASCADE;
 
 -- Seed country codes
 COPY beverage.country_codes (country_code, country_name)
-FROM '/Users/elijahsilva/projects/beverage-analytics-project/sql/source_data/country_codes-iso3166.csv'
+FROM '/Users/elijahsilva/projects/beverage-analytics-project/data/seeds/country_codes-iso3166.csv'
 DELIMITER ',' CSV HEADER;
 
 -- Seed currency codes
 COPY beverage.currency_codes (currency_code, currency_name)
-FROM '/Users/elijahsilva/projects/beverage-analytics-project/sql/source_data/currency_codes-iso4217.csv'
+FROM '/Users/elijahsilva/projects/beverage-analytics-project/data/seeds/currency_codes-iso4217.csv'
 DELIMITER ',' CSV HEADER;
 
 -- Seed product types
@@ -100,7 +100,8 @@ VALUES
 	('Jin Jun Mei'),
   	('Huangshan Maofeng'),
   	('Sencha'),
-  	('Gyokuro');
+  	('Gyokuro'),
+	('Castillo');
 
 INSERT INTO processing_methods (processing_method_name)
 VALUES
@@ -120,7 +121,8 @@ VALUES
   	('Fermented'),
   	('Aged'),
   	('Compressed'),
-  	('Blended');
+  	('Blended'),
+	('Thermal Shock Washed');
 
 INSERT INTO materials (material_name, category)
 VALUES

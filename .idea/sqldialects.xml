@@ -5,13 +5,25 @@
     <file url="file://$PROJECT_DIR$/sql/bootstrap/000_create_schemas.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/locations/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/locations/010_load_from_stage.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/order_items/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/order_items/010_load_from_stage.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/orders/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/orders/010_load_from_stage.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/products/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/products/010_load_from_stage.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/sessions/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/core/sessions/010_load_from_stage.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/vendors/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/locations/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/locations/010_load.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/order_items/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/order_items/010_load.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/orders/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/orders/010_load.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/products/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/products/010_load.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/sessions/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/raw/sessions/010_load.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/vendors/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/raw/vendors/010_load.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/ref/000_ref_tables.sql" dialect="PostgreSQL" />
@@ -23,8 +35,14 @@
     <file url="file://$PROJECT_DIR$/sql/stage/000_schema.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/locations/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/locations/010_load_from_raw.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/order_items/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/order_items/010_load_from_raw.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/orders/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/orders/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/products/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/products/010_load_from_raw.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/sessions/000_create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/stage/sessions/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/vendors/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/testing/099_dml.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />

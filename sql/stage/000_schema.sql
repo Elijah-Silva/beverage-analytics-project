@@ -3,27 +3,6 @@
 -- Purpose: Initialize database structure
 -- =============================================
 
-
-CREATE TABLE sessions (
-	session_id			INT			GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-	brewing_method_id	INT			NOT NULL,
-	rating				INT			NOT NULL CHECK (rating BETWEEN 1 and 10),
-	water_type			TEXT		NOT NULL CHECK (water_type IN ('Tap', 'Spring', 'Filtered')),
-	session_type		TEXT		NOT NULL CHECK (session_type IN ('Tea', 'Coffee')),
-	session_date		TIMESTAMPTZ	NOT NULL DEFAULT now(),
-	favorite_flag		BOOLEAN		NOT NULL DEFAULT FALSE,
-	session_location_id	INT			NOT NULL,
-	location_id			INT			NOT NULL,
-	created_date 		TIMESTAMPTZ	NOT NULL DEFAULT now(),
-	last_modified_date 	TIMESTAMPTZ	NOT NULL DEFAULT now(),
-	grind_size			NUMERIC,
-	notes				TEXT,
-	CHECK (session_type <> 'Coffee' OR grind_size IS NOT NULL),
-	FOREIGN KEY (brewing_method_id) REFERENCES brewing_methods (brewing_method_id),
-	FOREIGN KEY (session_location_id) REFERENCES session_locations (session_location_id),
-	FOREIGN KEY (location_id) REFERENCES locations (location_id)
-);
-
 CREATE TABLE extractions (
 	extract_id 			INT			GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 	session_id			INT			NOT NULL,
@@ -35,33 +14,6 @@ CREATE TABLE extractions (
 		ON UPDATE RESTRICT
 		ON DELETE CASCADE,
 	UNIQUE (session_id, extraction_number)
-);
-
-CREATE TABLE orders (
-	order_id 			INT				GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-	vendor_id			INT				NOT NULL,
-	order_date			TIMESTAMPTZ 	NOT NULL DEFAULT now(),
-	shipping_cost		NUMERIC(7,2)	NOT NULL,
-	total_cost			NUMERIC(9,2)	NOT NULL,
-	notes				TEXT,
-	order_status_id		INT				NOT NULL,
-	created_date 		TIMESTAMPTZ		NOT NULL DEFAULT now(),
-	last_modified_date 	TIMESTAMPTZ		NOT NULL DEFAULT now(),
-	FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id),
-	FOREIGN KEY (order_status_id) REFERENCES order_status (order_status_id)
-);
-
-CREATE TABLE order_items (
-	order_item_id 		INT				GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-	order_id			INT				NOT NULL,
-	product_id			INT				NOT NULL,
-	unit_price			NUMERIC(9,2)	NOT NULL,
-	quantity_count		INT,
-	quantity_weight		NUMERIC(7,2),
-	subtotal			NUMERIC(9,2)	NOT NULL,
-	notes				TEXT,
-	FOREIGN KEY (order_id) REFERENCES orders (order_id),
-	FOREIGN KEY (product_id) REFERENCES products (product_id)
 );
 
 CREATE TABLE batch_inventory (

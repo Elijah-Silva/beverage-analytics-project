@@ -2,6 +2,7 @@ SET search_path TO core;
 
 CREATE TABLE locations (
 	location_id 		INT 			GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    location_name       TEXT            NOT NULL,
 	address				TEXT			NOT NULL,
 	city				TEXT			NOT NULL,
 	state				TEXT			NOT NULL,

@@ -1,0 +1,5 @@
+vendor_name,order_date,order_number,shipping_cost,total_cost,order_status,created_date,last_modified_date
+Cafune,2025-09-24,CF56621,0,886.82,Received,2025-10-09,2025-10-09
+Eight Ounce Coffee,2025-09-25,RT-227404,0,85.38,Received,2025-10-09,2025-10-09
+Wuyi Origin,2025-02-07,3619,0,246.16,Received,2025-10-09,2025-10-09
+Amazon,2025-01-01,9999,0,25,Received,2025-10-09,2025-10-09

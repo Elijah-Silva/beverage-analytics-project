@@ -14,11 +14,9 @@ CREATE TABLE products (
 	FOREIGN KEY (vendor_id) REFERENCES vendors (vendor_id)
 );
 
-/*
-
 CREATE TABLE product_coffee_details (
 	product_id				INT		PRIMARY KEY REFERENCES products (product_id),
-	roast_level				TEXT	NOT NULL CHECK (roast_level IN ('Light','Medium','Dark','Espresso')),
+	roast_level				TEXT	NOT NULL CHECK (roast_level IN ('Light','Medium', 'Medium Dark', 'Dark','Espresso')),
 	roast_date				DATE	NOT NULL,
 	origin_type				TEXT	NOT NULL CHECK (origin_type IN ('Single', 'Multi')),
 	varietal_id				INT,
@@ -41,12 +39,11 @@ CREATE TABLE product_equipment_details (
 
 CREATE TABLE product_tea_details (
 	product_id				INT		PRIMARY KEY REFERENCES products (product_id),
-	tea_type				TEXT	NOT NULL CHECK (tea_type IN ('Green', 'White', 'Yellow', 'Oolong', 'Black', 'Puer (Shou)', 'Puer (Sheng)', 'Hei Cha', 'Herbal')),
+	tea_type				TEXT	NOT NULL CHECK (tea_type IN ('Green', 'White', 'Yellow', 'Yancha', 'Oolong', 'Black', 'Puer (Shou)', 'Puer (Sheng)', 'Hei Cha', 'Herbal')),
 	harvest_year			INT,
 	storage_location		TEXT,
 	cultivar				TEXT,
+    altitude_meters         TEXT,
 	processing_method_id	INT,
 	FOREIGN KEY (processing_method_id) REFERENCES ref.processing_methods (processing_method_id)
 );
-
- */

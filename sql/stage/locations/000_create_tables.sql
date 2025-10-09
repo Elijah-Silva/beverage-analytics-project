@@ -1,6 +1,7 @@
 SET search_path TO stage;
 
 CREATE TABLE locations (
+    location_name       TEXT,
 	address				TEXT,
 	city				TEXT,
 	state				TEXT,

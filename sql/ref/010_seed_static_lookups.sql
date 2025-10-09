@@ -5,8 +5,7 @@ INSERT INTO product_types (product_type_name)
 VALUES
 	('Coffee'),
 	('Tea'),
-	('Teaware'),
-	('Coffeeware');
+	('Equipment');
 
 -- Seed brewing methods
 INSERT INTO brewing_methods (brewing_method_name)
@@ -66,6 +65,7 @@ VALUES
   	('Brass', 'Metal'),
   	('Stainless Steel', 'Metal'),
   	('Silver', 'Metal'),
+  	('Aluminum', 'Metal'),
 
   -- Natural Materials
   	('Wood', 'Natural'),

@@ -2,8 +2,8 @@ order_number,product_name,unit_price,quantity_count,quantity_weight,subtotal
 CF56621,Cafelat Robot,599,1,,599
 CF56621,Subminimal Flick WDT Tool,38,1,,38
 CF56621,BooKoo Themis Mini Scale,190,1,,190
-RT-227404,No6 Full City Espresso,23,1,,23
-RT-227404,DAK Milky Cake Espresso,33,1,,33
+RT-227404,No6 Full City Espresso,23,,340,23
+RT-227404,DAK Milky Cake Espresso,33,,250,33
 RT-227404,notNeutral VERO Espresso Glass,26,1,,26
 3619,Shui Xian (Floral Style),12,,25,12
 3619,Hundred years Lapsang Souchong Smoked Style,16,,25,16

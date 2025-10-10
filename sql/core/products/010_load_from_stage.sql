@@ -71,9 +71,9 @@ FROM stage.products_coffee pc
                                 AND p.product_type_id = pt.product_type_id;
 
 -- product tea details
-INSERT INTO core.product_tea_details (product_id, tea_type, harvest_year, storage_location, cultivar,
+INSERT INTO core.product_tea_details (product_id, tea_type, harvest_year, cultivar,
                                       altitude_meters, processing_method_id)
-SELECT p.product_id, pt.tea_type, pt.harvest_year, pt.storage_location, pt.cultivar, pt.altitude_meters,
+SELECT p.product_id, pt.tea_type, pt.harvest_year, pt.cultivar, pt.altitude_meters,
        pm.processing_method_id
 FROM stage.products_tea pt
     JOIN core.vendors cv ON cv.vendor_name = pt.vendor_name

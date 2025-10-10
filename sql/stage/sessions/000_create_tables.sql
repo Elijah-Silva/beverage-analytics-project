@@ -10,8 +10,6 @@ CREATE TABLE sessions (
     favorite_flag         BOOLEAN,
     session_location_name TEXT,
     location_name         TEXT,
-    created_date          DATE,
-    last_modified_date    DATE,
     grind_size            NUMERIC,
     notes                 TEXT
 )

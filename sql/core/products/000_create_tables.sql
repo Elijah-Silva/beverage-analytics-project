@@ -41,7 +41,6 @@ CREATE TABLE product_tea_details (
 	product_id				INT		PRIMARY KEY REFERENCES products (product_id),
 	tea_type				TEXT	NOT NULL CHECK (tea_type IN ('Green', 'White', 'Yellow', 'Yancha', 'Oolong', 'Black', 'Puer (Shou)', 'Puer (Sheng)', 'Hei Cha', 'Herbal')),
 	harvest_year			INT,
-	storage_location		TEXT,
 	cultivar				TEXT,
     altitude_meters         TEXT,
 	processing_method_id	INT,

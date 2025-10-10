@@ -12,7 +12,7 @@ INSERT INTO stage.raw_products (
     product_name, product_type, vendor_name, region,
     roast_level, roast_date, origin_type, varietal, altitude_meters,
     processing_method, material, volume, clay_type, pour_speed, color,
-    tea_type, harvest_year, storage_location, cultivar,
+    tea_type, harvest_year, cultivar,
     is_active, notes, created_date, last_modified_date
 )
 SELECT
@@ -33,7 +33,6 @@ SELECT
     color,
     tea_type,
     harvest_year::INT,
-    storage_location,
     cultivar,
     is_active::BOOLEAN,
     notes,
@@ -52,10 +51,9 @@ FROM stage.raw_products;
 -- 3) Route to subtypes (match the same UPPER convention)
 -- TEA
 INSERT INTO stage.products_tea (
-    product_name, vendor_name, tea_type, harvest_year, storage_location,
-    cultivar, altitude_meters, processing_method
+    product_name, vendor_name, tea_type, harvest_year, cultivar, altitude_meters, processing_method
 )
-SELECT product_name, vendor_name, tea_type, harvest_year, storage_location, cultivar, altitude_meters, processing_method
+SELECT product_name, vendor_name, tea_type, harvest_year, cultivar, altitude_meters, processing_method
 FROM stage.raw_products
 WHERE product_type = 'Tea';
 

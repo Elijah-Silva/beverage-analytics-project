@@ -44,7 +44,10 @@ VALUES
 	('Teapot'),
 	('Gongfu'),
 	('Faircup'),
-	('Cup');
+	('Cup'),
+	('Espresso Maker'),
+	('Espresso Dose'),
+	('Tea Dose');
 
 INSERT INTO materials (material_name, category)
 VALUES

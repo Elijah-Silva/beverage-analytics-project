@@ -18,7 +18,6 @@ CREATE TABLE products (
     color               TEXT,
     tea_type            TEXT,
     harvest_year        TEXT,
-    storage_location    TEXT,
     cultivar            TEXT,
     is_active           TEXT,
     notes               TEXT,

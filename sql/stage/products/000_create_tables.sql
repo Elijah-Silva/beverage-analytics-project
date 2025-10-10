@@ -18,7 +18,6 @@ CREATE TABLE raw_products (
     color               TEXT,
     tea_type            TEXT,
     harvest_year        INT,
-    storage_location    TEXT,
     cultivar            TEXT,
     is_active           BOOLEAN,
     notes               TEXT,
@@ -43,7 +42,6 @@ CREATE TABLE IF NOT EXISTS products_tea (
     vendor_name       TEXT,
     tea_type          TEXT,
     harvest_year      INT,
-    storage_location  TEXT,
     cultivar          TEXT,
     altitude_meters   TEXT,
     processing_method TEXT

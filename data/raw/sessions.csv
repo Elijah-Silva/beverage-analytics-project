@@ -1,2 +1,3 @@
-session_code,brewing_method_name,rating,water_type,session_type,session_date,favorite_flag,session_location_name,location_name,created_date,last_modified_date,grind_size,notes
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Espresso,2,Filtered,Coffee,2025-10-09,FALSE,Home,Home,2025-10-09,2025-10-09,10.5,
+session_code,brewing_method_name,rating,water_type,session_type,session_date,favorite_flag,session_location_name,location_name,grind_size,notes
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Espresso,2,Filtered,Coffee,2025-10-09,FALSE,Home,Home,10.5,
+5E129DDA-2BB3-470F-8847-338525501836,Espresso,2,Filtered,Coffee,2025-10-10,FALSE,Home,Home,10,

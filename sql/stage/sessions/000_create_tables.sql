@@ -12,4 +12,14 @@ CREATE TABLE sessions (
     location_name         TEXT,
     grind_size            NUMERIC,
     notes                 TEXT
-)
+);
+
+CREATE TABLE session_batch_inventory (
+    session_code            UUID,
+    product_name            TEXT,
+    vendor_name             TEXT,
+    quantity_used           INT,
+    role                    TEXT,
+    batch_code              TEXT,
+    unit                    TEXT
+);

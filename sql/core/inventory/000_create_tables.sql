@@ -15,14 +15,3 @@ CREATE TABLE batch_inventory (
 	FOREIGN KEY (product_id) REFERENCES core.products (product_id),
 	FOREIGN KEY (order_item_id) REFERENCES core.order_items (order_item_id)
 );
-
-CREATE TABLE session_batch_inventory (
-	session_batch_inventory_id	INT				GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-	session_id					INT				NOT NULL,
-	batch_inventory_id			INT				NOT NULL,
-	quantity_used				NUMERIC(7,2)    NOT NULL,
-	role_id						INT				NOT NULL,
-	FOREIGN KEY (session_id) REFERENCES core.sessions (session_id),
-	FOREIGN KEY (batch_inventory_id) REFERENCES batch_inventory (batch_inventory_id),
-	FOREIGN KEY (role_id) REFERENCES ref.roles (role_id)
-);

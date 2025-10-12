@@ -20,3 +20,8 @@ FROM stage.sessions s
     JOIN ref.session_locations sl ON sl.session_location_name = s.session_location_name
     JOIN core.locations l ON l.location_name = s.location_name;
 
+/*
+INSERT INTO core.session_batch_inventory (session_id, batch_inventory_id, quantity_used, role_id, batch_code, unit)
+SELECT
+
+ */

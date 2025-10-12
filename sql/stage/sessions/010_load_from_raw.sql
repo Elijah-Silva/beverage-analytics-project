@@ -16,3 +16,15 @@ SELECT
     grind_size::NUMERIC,
     notes
 FROM raw.sessions;
+
+
+INSERT INTO session_batch_inventory (session_code, product_name, vendor_name, quantity_used, role, batch_code, unit)
+SELECT
+    session_code::UUID,
+    product_name,
+    vendor_name,
+    quantity_used::INT,
+    role,
+    batch_code,
+    unit
+FROM raw.session_batch_inventory;

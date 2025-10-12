@@ -19,3 +19,13 @@ CREATE TABLE sessions (
 	FOREIGN KEY (session_location_id) REFERENCES ref.session_locations (session_location_id),
 	FOREIGN KEY (location_id) REFERENCES core.locations (location_id)
 );
+
+CREATE TABLE session_batch_inventory (
+    session_batch_inventory_id  INT     GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    session_id                  INT     NOT NULL,
+    batch_inventory_id          INT     NOT NULL,
+    quantity_used               INT     NOT NULL,
+    role_id                     INT     NOT NULL,
+    batch_code                  TEXT,
+    unit                        TEXT    NOT NULL
+);

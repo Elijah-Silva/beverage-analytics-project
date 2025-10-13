@@ -5,7 +5,7 @@ CREATE TABLE locations (
 	address				TEXT,
 	city				TEXT,
 	state				TEXT,
-	country_code		CHAR(2),
+	country_code		TEXT,
   	latitude        	NUMERIC(9,6),
   	longitude       	NUMERIC(9,6)
 );

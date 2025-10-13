@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SQL_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"   # -> /sql
-PSQL="psql -d beverage -v ON_ERROR_STOP=1"
+PSQL="psql -d beverage -v ON_ERROR_STOP=1 -q"
 
 echo "🚀 Rebuilding and seeding database..."
 
@@ -68,10 +68,15 @@ $PSQL -f "$SQL_DIR/core/extractions/000_create_tables.sql"
 $PSQL -f "$SQL_DIR/core/extractions/010_load_from_stage.sql"
 $PSQL -f "$SQL_DIR/core/junctions/000_create_tables.sql"
 $PSQL -f "$SQL_DIR/core/junctions/010_load_tables.sql"
-$PSQL -f "$SQL_DIR/core/inventory/020_views.sql"
 
 # util tables
-$PSQL -f "$SQL_DIR/util/000_create_tables.sql"
-$PSQL -f "$SQL_DIR/util/010_load_review_data.sql"
+$PSQL -f "$SQL_DIR/util/010_fk_review_views.sql"
+$PSQL -f "$SQL_DIR/util/020_dq_review_views.sql"
 
 echo "✅ Database rebuilt and seeded successfully."
+
+# current inventory table
+echo "------------------"
+echo "Current inventory:"
+$PSQL -f "$SQL_DIR/core/inventory/020_views.sql"
+

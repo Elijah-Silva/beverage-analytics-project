@@ -3,6 +3,9 @@
 -- Purpose: Initialize database schemas
 -- =============================================
 
+BEGIN;
+SET LOCAL client_min_messages = WARNING;  -- hides NOTICE
+
 -- Drop existing schemas for a clean rebuild (DEV/STAGING ONLY)
 DROP SCHEMA IF EXISTS util CASCADE;
 DROP SCHEMA IF EXISTS core CASCADE;
@@ -20,3 +23,5 @@ CREATE SCHEMA IF NOT EXISTS util;
 -- Optional: set default search path for convenience
 ALTER DATABASE beverage
     SET search_path TO core, stage, ref, raw, util, public;
+
+COMMIT;

@@ -5,7 +5,7 @@
     <file url="file://$PROJECT_DIR$/sql/bootstrap/000_create_schemas.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/core/extractions/010_load_from_stage.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/core/inventory/010_load_from_orders.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
-    <file url="file://$PROJECT_DIR$/sql/core/inventory/020_views_and_flags.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/core/inventory/020_views.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/core/junctions/010_load_tables.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/core/locations/000_create_tables.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/core/locations/010_load_from_stage.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
@@ -27,5 +27,7 @@
     <file url="file://$PROJECT_DIR$/sql/stage/sessions/010_load_from_raw.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/stage/vendors/010_load_from_raw.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
     <file url="file://$PROJECT_DIR$/sql/testing/099_dml.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/util/000_create_tables.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
+    <file url="file://$PROJECT_DIR$/sql/util/010_load_review_data.sql" value="710fc8c2-f529-49e4-94fc-4c10e2da1aba" />
   </component>
 </project>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/710fc8c2-f529-49e4-94fc-4c10e2da1aba/console.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/bootstrap/000_create_schemas.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/extractions/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/extractions/010_load_from_stage.sql" dialect="PostgreSQL" />
@@ -55,7 +54,9 @@
     <file url="file://$PROJECT_DIR$/sql/stage/sessions/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/stage/vendors/010_load_from_raw.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/testing/099_dml.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/sql/util/010_fk_review_views.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/util/010_dq_raw_review_views.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/util/020_fk_review_views.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/util/060_check_dq_issues.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

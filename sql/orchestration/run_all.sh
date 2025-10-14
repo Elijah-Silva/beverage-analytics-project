@@ -5,7 +5,10 @@ SCRIPT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SQL_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"   # -> /sql
 PSQL="psql -d beverage -v ON_ERROR_STOP=1 -q"
 
-echo "🚀 Rebuilding and seeding database..."
+echo " -----------------------------------------------------"
+echo "|                                                     |"
+echo "| 🚀 Rebuilding and seeding database...               |"
+echo "|                                                     |"
 
 $PSQL -f "$SQL_DIR/bootstrap/000_create_schemas.sql"
 
@@ -32,6 +35,12 @@ $PSQL -f "$SQL_DIR/raw/sessions/000_create_tables.sql"
 $PSQL -f "$SQL_DIR/raw/sessions/010_load.sql"
 $PSQL -f "$SQL_DIR/raw/extractions/000_create_tables.sql"
 $PSQL -f "$SQL_DIR/raw/extractions/010_load.sql"
+
+# data checks
+echo "|❔ Checking raw data files..."
+$PSQL -f "$SQL_DIR/util/010_dq_raw_review_views.sql"
+$PSQL -f "$SQL_DIR/util/040_raw_dq_check.sql"
+echo "|"
 
 # stage schema tables
 $PSQL -f "$SQL_DIR/stage/vendors/000_create_tables.sql"
@@ -69,14 +78,24 @@ $PSQL -f "$SQL_DIR/core/extractions/010_load_from_stage.sql"
 $PSQL -f "$SQL_DIR/core/junctions/000_create_tables.sql"
 $PSQL -f "$SQL_DIR/core/junctions/010_load_tables.sql"
 
-# util tables
-$PSQL -f "$SQL_DIR/util/010_fk_review_views.sql"
-$PSQL -f "$SQL_DIR/util/020_dq_review_views.sql"
 
-echo "✅ Database rebuilt and seeded successfully."
+$PSQL -f "$SQL_DIR/util/020_fk_review_views.sql"
+$PSQL -f "$SQL_DIR/util/030_dq_review_views.sql"
+echo "|❔ Checking foreign key integrity..."
+$PSQL -f "$SQL_DIR/util/050_check_fq_issues.sql"
+# echo "|"
+# echo "|❔ Checking data quality issues..."
+# $PSQL -f "$SQL_DIR/util/060_check_dq_issues.sql"
+
+# database rebuilt text
+echo "|                                                     |"
+echo "| 💯 Database rebuilt and seeded successfully.        |"
+echo "|                                                     |"
+echo " -----------------------------------------------------"
 
 # current inventory table
-echo "------------------"
+echo ""
 echo "Current inventory:"
+echo ""
 $PSQL -f "$SQL_DIR/core/inventory/020_views.sql"
 

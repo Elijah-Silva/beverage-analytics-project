@@ -6,5 +6,5 @@ CREATE TABLE order_items (
 	unit_price			NUMERIC(9,2),
 	quantity_count		INT,
 	quantity_weight		NUMERIC(7,2),
-	subtotal			NUMERIC(9,2)	NOT NULL
+	subtotal			NUMERIC(9,2)
 );

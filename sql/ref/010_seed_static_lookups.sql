@@ -75,7 +75,8 @@ VALUES
   	('Bamboo', 'Natural'),
 
   -- Synthetic
-  	('Plastic', 'Synthetic');
+  	('Plastic', 'Synthetic'),
+  	('Electronic', 'Synthetic');
 
 
 INSERT INTO clay_types (clay_type_name)
@@ -95,4 +96,5 @@ VALUES
   	('Seto'),
   	('Karatsu'),
   	('Iga'),
-  	('Mashiko');
+  	('Mashiko'),
+  	('None');

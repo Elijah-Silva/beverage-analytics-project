@@ -4,6 +4,7 @@ CREATE TABLE order_items (
 	order_item_id 		INT				GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 	order_id			INT				NOT NULL,
 	product_id			INT				NOT NULL,
+	production_date     DATE,
 	unit_price			NUMERIC(9,2)	NOT NULL CHECK (unit_price >= 0),
 	quantity_count		INT             CHECK (quantity_count > 0),
 	quantity_weight		NUMERIC(7,2)    CHECK (quantity_count > 0),

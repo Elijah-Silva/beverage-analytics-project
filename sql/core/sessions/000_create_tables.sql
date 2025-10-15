@@ -25,6 +25,7 @@ CREATE TABLE session_batch_inventory (
     session_batch_inventory_id  INT     GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     session_id                  INT     NOT NULL,
     batch_inventory_id          INT     NOT NULL,
+	production_date             DATE,
     quantity_used               INT     NOT NULL CHECK (quantity_used >= 1),
     role_id                     INT     NOT NULL,
     batch_code                  TEXT,

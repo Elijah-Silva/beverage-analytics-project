@@ -13,3 +13,4 @@ SELECT
 FROM stage.session_batch_inventory sbi
 WHERE sbi.quantity_used IS NULL
    OR sbi.quantity_used <= 0;
+

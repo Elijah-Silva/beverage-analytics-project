@@ -29,7 +29,6 @@ JOIN ref.product_types pt
 INSERT INTO core.product_coffee_details (
 	product_id,
 	roast_level,
-	roast_date,
 	origin_type,
 	varietal_id,
 	altitude_meters,
@@ -38,7 +37,6 @@ INSERT INTO core.product_coffee_details (
 SELECT
 	p.product_id,
 	pc.roast_level,
-	pc.roast_date,
 	pc.origin_type,
 	var.varietal_id,
 	pc.altitude_meters,
@@ -61,7 +59,6 @@ JOIN core.products          p
 INSERT INTO core.product_tea_details (
 	product_id,
 	tea_type,
-	harvest_year,
 	cultivar,
 	altitude_meters,
 	processing_method_id
@@ -69,7 +66,6 @@ INSERT INTO core.product_tea_details (
 SELECT
 	p.product_id,
 	pt.tea_type,
-	pt.harvest_year,
 	pt.cultivar,
 	pt.altitude_meters,
 	pm.processing_method_id

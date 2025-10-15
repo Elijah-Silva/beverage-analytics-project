@@ -210,7 +210,7 @@ WHERE m.material_id IS NULL
 -- orders
 CREATE OR REPLACE VIEW util.orders_fk_review AS
 SELECT
-	v.vendor_name,
+	o.vendor_name,
 	o.order_date,
 	o.order_number,
 	o.order_status,

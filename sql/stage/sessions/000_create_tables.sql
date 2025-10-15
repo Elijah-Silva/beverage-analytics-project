@@ -17,11 +17,12 @@ CREATE TABLE sessions
 
 CREATE TABLE session_batch_inventory
 (
-	session_code  UUID,
-	product_name  TEXT,
-	vendor_name   TEXT,
-	quantity_used INT,
-	role          TEXT,
-	batch_code    TEXT,
-	unit          TEXT
+	session_code    UUID,
+	product_name    TEXT,
+	vendor_name     TEXT,
+	production_date DATE,
+	quantity_used   INT,
+	role            TEXT,
+	batch_code      TEXT,
+	unit            TEXT
 );

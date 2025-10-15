@@ -20,7 +20,6 @@ CREATE TABLE product_coffee_details
 (
 	product_id           INT PRIMARY KEY REFERENCES products (product_id),
 	roast_level          TEXT NOT NULL CHECK (roast_level IN ('Light', 'Medium', 'Medium Dark', 'Dark', 'Espresso')),
-	roast_date           DATE NOT NULL,
 	origin_type          TEXT NOT NULL CHECK (origin_type IN ('Single', 'Multi')),
 	varietal_id          INT,
 	altitude_meters      INT CHECK (altitude_meters >= 0),
@@ -47,7 +46,6 @@ CREATE TABLE product_tea_details
 	tea_type             TEXT NOT NULL CHECK (tea_type IN
 	                                          ('Green', 'White', 'Yellow', 'Yancha', 'Oolong', 'Black', 'Puer (Shou)',
 	                                           'Puer (Sheng)', 'Hei Cha', 'Herbal')),
-	harvest_year         INT,
 	cultivar             TEXT,
 	altitude_meters      TEXT,
 	processing_method_id INT,

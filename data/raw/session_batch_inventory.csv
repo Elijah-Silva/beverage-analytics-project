@@ -1,7 +1,4 @@
-﻿session_code,product_name,vendor_name,quantity_used,role,batch_code,unit
-A1876727-4672-4D56-A7F2-5D11A8982EEC,No6 Full City Espresso,Eight Ounce Coffee,16,Espresso Dose,,g
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,1,Espresso Maker,,pcs
-A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,1,Cup,,pcs
-5E129DDA-2BB3-470F-8847-338525501836,No6 Full City Espresso,Eight Ounce Coffee,16,Espresso Dose,,g
-5E129DDA-2BB3-470F-8847-338525501836,Cafelat Robot,Cafune,1,Espresso Maker,,pcs
-5E129DDA-2BB3-470F-8847-338525501836,notNeutral VERO Espresso Glass,Eight Ounce Coffee,1,Cup,,pcs
+﻿session_code,product_name,vendor_name,production_date,quantity_used,role,batch_code,unit
+A1876727-4672-4D56-A7F2-5D11A8982EEC,No6 Full City Espresso,Eight Ounce Coffee,2025-09-19,340,Espresso Dose,,g
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1,Espresso Maker,,pcs
+A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,Cup,,pcs

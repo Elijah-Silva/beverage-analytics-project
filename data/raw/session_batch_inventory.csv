@@ -1,4 +1,5 @@
-﻿session_code,product_name,vendor_name,production_date,quantity_used,role,batch_code,unit
-A1876727-4672-4D56-A7F2-5D11A8982EEC,No6 Full City Espresso,Eight Ounce Coffee,2025-09-19,340,Espresso Dose,,g
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1,Espresso Maker,,pcs
-A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,Cup,,pcs
+﻿session_code,product_name,vendor_name,production_date,quantity_used,quantity_output,role,batch_code,unit
+A1876727-4672-4D56-A7F2-5D11A8982EEC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.1,Espresso Dose,,g
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs

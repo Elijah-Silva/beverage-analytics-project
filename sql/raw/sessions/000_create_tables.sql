@@ -20,6 +20,7 @@ CREATE TABLE session_batch_inventory (
     vendor_name     TEXT,
 	production_date TEXT,
     quantity_used   TEXT,
+	quantity_output TEXT,
     role            TEXT,
     batch_code      TEXT,
     unit            TEXT

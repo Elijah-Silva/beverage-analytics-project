@@ -35,6 +35,7 @@ INSERT INTO session_batch_inventory (
 	vendor_name,
 	production_date,
 	quantity_used,
+	quantity_output,
 	role,
 	batch_code,
 	unit
@@ -45,6 +46,7 @@ SELECT
 	TRIM(vendor_name),
 	production_date::DATE,
 	quantity_used::INT,
+	quantity_output::NUMERIC,
 	TRIM(role),
 	TRIM(batch_code),
 	TRIM(unit)

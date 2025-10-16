@@ -38,6 +38,7 @@ INSERT INTO core.session_batch_inventory (
 	batch_inventory_id,
 	production_date,
 	quantity_used,
+	quantity_output,
 	role_id,
 	batch_code,
 	unit
@@ -47,6 +48,7 @@ SELECT
 	bi.batch_inventory_id,
 	sbi.production_date,
 	sbi.quantity_used,
+	sbi.quantity_output,
 	r.role_id,
 	sbi.batch_code,
 	sbi.unit

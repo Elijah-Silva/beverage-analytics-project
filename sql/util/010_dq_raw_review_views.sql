@@ -116,9 +116,7 @@ FROM (
 	        ('MISSING_ORDER_NUMBER', order_number IS NULL),
 	        ('MISSING_SHIPPING_COST', shipping_cost IS NULL),
 	        ('MISSING_TOTAL_COST', total_cost IS NULL),
-	        ('MISSING_ORDER_STATUS', order_status IS NULL),
-	        ('MISSING_CREATED_DATE', created_date IS NULL),
-	        ('MISSING_LAST_MODIFIED_DATE', last_modified_date IS NULL)
+	        ('MISSING_ORDER_STATUS', order_status IS NULL)
 	) AS checks(issue_type, is_null)
 	WHERE is_null
 	GROUP BY issue_type

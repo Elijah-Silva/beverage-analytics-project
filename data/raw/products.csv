@@ -1,21 +1,21 @@
-product_name,product_type_name,vendor_name,region,roast_level,origin_type,varietal,altitude_meters,processing_method,material,volume,clay_type,pour_speed,color,tea_type,cultivar,is_active,notes,created_date,last_updated
-No6 Full City Espresso,Coffee,Eight Ounce Coffee,"Brazil, Guatemala",Medium Dark,Multi,Blend,,Blended,,,,,,,,TRUE,,2025-10-08,2025-10-08
-DAK Milky Cake Espresso,Coffee,Eight Ounce Coffee,Colombia,Medium,Single,Castillo,1730,Thermal Shock,,,,,,,,TRUE,,2025-10-09,2025-10-09
-Cafelat Robot,Equipment,Cafune,,,,,,,Aluminum,,None,,Black,,,TRUE,,2025-10-09,2025-10-09
-Subminimal Flick WDT Tool,Equipment,Cafune,,,,,,,Aluminum,,None,,Black,,,TRUE,,2025-10-09,2025-10-09
-BooKoo Themis Mini Scale,Equipment,Cafune,,,,,,,Electronic,,None,,Black,,,TRUE,,2025-10-09,2025-10-09
-notNeutral VERO Espresso Glass,Equipment,Eight Ounce Coffee,,,,,,,Glass,89,None,,Smoke,,,TRUE,,2025-10-09,2025-10-09
-Hario 300ml Teapot,Equipment,Amazon,,,,,,,Glass,,None,,Glass,,,TRUE,,2025-10-09,2025-10-09
-Shui Xian (Floral Style),Tea,Wuyi Origin,China,,,,,Roasted,,,,,,Yancha,Shui Xian ,TRUE,,2025-10-09,2025-10-09
-Hundred years Lapsang Souchong Smoked Style,Tea,Wuyi Origin,China,,,,1000,Smoked,,,,,,Yancha,,TRUE,,2025-10-09,2025-10-09
-Fan Shu Xiang (Sweet Potato Scent),Tea,Wuyi Origin,China,,,,900,Roasted,,,,,,Yancha,Fan Shu Xiang,TRUE,,2025-10-09,2025-10-09
-Shui Jingui (Water Turtle),Tea,Wuyi Origin,China,,,,600,Roasted,,,,,,Yancha,Shui Jin Gui ,TRUE,,2025-10-09,2025-10-09
-Bai Ji Guan,Tea,Wuyi Origin,China,,,,550,Roasted,,,,,,Yancha,Bai Ji Guan,TRUE,,2025-10-09,2025-10-09
-Mi Tao Xiang (Honey Peach Aroma),Tea,Wuyi Origin,China,,,,900,Roasted,,,,,,Yancha,Mi Tao,TRUE,,2025-10-09,2025-10-09
-Jin Jun Mei (Honey Style),Tea,Wuyi Origin,China,,,,,None,,,,,,Yancha,Fuyun No#6,TRUE,,2025-10-09,2025-10-09
-Lao Cong Shui Xian,Tea,Wuyi Origin,China,,,,1400,Roasted,,,,,,Yancha,,TRUE,,2025-10-09,2025-10-09
-Wild Lapsang Souchong,Tea,Wuyi Origin,China,,,,,None,,,,,,Yancha,Mixed,TRUE,,2025-10-09,2025-10-09
-Xing Ren Xiang (Almond Fragrance),Tea,Wuyi Origin,China,,,,1200,Roasted,,,,,,Yancha,Xing Ren Xiang,TRUE,,2025-10-09,2025-10-09
-Rou Gui,Tea,Wuyi Origin,China,,,,,Roasted,,,,,,Yancha,Rou Gui,TRUE,,2025-10-09,2025-10-09
-Da Hong Pao Blended,Tea,Wuyi Origin,China,,,,550,Roasted,,,,,,Yancha,Mixed,TRUE,,2025-10-09,2025-10-09
-Shuixian,Tea,Wuyi Origin,China,,,,,Roasted,,,,,,Yancha,,TRUE,,2025-10-09,2025-10-09
+product_name,product_type_name,vendor_name,region,roast_level,origin_type,varietal,altitude_meters,processing_method,material,volume,clay_type,pour_speed,color,tea_type,cultivar,is_active,notes
+No6 Full City Espresso,Coffee,Eight Ounce Coffee,"Brazil, Guatemala",Medium Dark,Multi,Blend,,Blended,,,,,,,,TRUE,
+DAK Milky Cake Espresso,Coffee,Eight Ounce Coffee,Colombia,Medium,Single,Castillo,1730,Thermal Shock,,,,,,,,TRUE,
+Cafelat Robot,Equipment,Cafune,,,,,,,Aluminum,,None,,Black,,,TRUE,
+Subminimal Flick WDT Tool,Equipment,Cafune,,,,,,,Aluminum,,None,,Black,,,TRUE,
+BooKoo Themis Mini Scale,Equipment,Cafune,,,,,,,Electronic,,None,,Black,,,TRUE,
+notNeutral VERO Espresso Glass,Equipment,Eight Ounce Coffee,,,,,,,Glass,89,None,,Smoke,,,TRUE,
+Hario 300ml Teapot,Equipment,Amazon,,,,,,,Glass,,None,,Glass,,,TRUE,
+Shui Xian (Floral Style),Tea,Wuyi Origin,China,,,,,Roasted,,,,,,Yancha,Shui Xian ,TRUE,
+Hundred years Lapsang Souchong Smoked Style,Tea,Wuyi Origin,China,,,,1000,Smoked,,,,,,Yancha,,TRUE,
+Fan Shu Xiang (Sweet Potato Scent),Tea,Wuyi Origin,China,,,,900,Roasted,,,,,,Yancha,Fan Shu Xiang,TRUE,
+Shui Jingui (Water Turtle),Tea,Wuyi Origin,China,,,,600,Roasted,,,,,,Yancha,Shui Jin Gui ,TRUE,
+Bai Ji Guan,Tea,Wuyi Origin,China,,,,550,Roasted,,,,,,Yancha,Bai Ji Guan,TRUE,
+Mi Tao Xiang (Honey Peach Aroma),Tea,Wuyi Origin,China,,,,900,Roasted,,,,,,Yancha,Mi Tao,TRUE,
+Jin Jun Mei (Honey Style),Tea,Wuyi Origin,China,,,,,None,,,,,,Yancha,Fuyun No#6,TRUE,
+Lao Cong Shui Xian,Tea,Wuyi Origin,China,,,,1400,Roasted,,,,,,Yancha,,TRUE,
+Wild Lapsang Souchong,Tea,Wuyi Origin,China,,,,,None,,,,,,Yancha,Mixed,TRUE,
+Xing Ren Xiang (Almond Fragrance),Tea,Wuyi Origin,China,,,,1200,Roasted,,,,,,Yancha,Xing Ren Xiang,TRUE,
+Rou Gui,Tea,Wuyi Origin,China,,,,,Roasted,,,,,,Yancha,Rou Gui,TRUE,
+Da Hong Pao Blended,Tea,Wuyi Origin,China,,,,550,Roasted,,,,,,Yancha,Mixed,TRUE,
+Shuixian,Tea,Wuyi Origin,China,,,,,Roasted,,,,,,Yancha,,TRUE,

@@ -19,9 +19,7 @@ CREATE TABLE raw_products
 	tea_type           TEXT,
 	cultivar           TEXT,
 	is_active          BOOLEAN,
-	notes              TEXT,
-	created_date       TIMESTAMPTZ,
-	last_modified_date TIMESTAMPTZ
+	notes              TEXT
 );
 
 CREATE TABLE products
@@ -31,9 +29,7 @@ CREATE TABLE products
 	vendor_name        TEXT,
 	region             TEXT,
 	is_active          BOOLEAN,
-	notes              TEXT,
-	created_date       TIMESTAMPTZ,
-	last_modified_date TIMESTAMPTZ
+	notes              TEXT
 );
 
 -- subtype stage tables

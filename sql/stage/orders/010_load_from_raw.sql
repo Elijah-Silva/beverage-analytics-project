@@ -6,9 +6,7 @@ INSERT INTO stage.orders (
 	order_number,
 	shipping_cost,
 	total_cost,
-	order_status,
-	created_date,
-	last_modified_date
+	order_status
 )
 SELECT
 	TRIM(vendor_name),
@@ -16,7 +14,5 @@ SELECT
 	TRIM(UPPER(order_number)),
 	shipping_cost::NUMERIC(7, 2),
 	total_cost::NUMERIC(9, 2),
-	TRIM(order_status),
-	created_date::DATE,
-	last_modified_date::DATE
+	TRIM(order_status)
 FROM raw.orders;

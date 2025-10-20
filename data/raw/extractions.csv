@@ -1,2 +1,4 @@
-﻿session_code,extraction_number,extraction_time,water_temperature,flavor_notes
-a1876727-4672-4d56-a7f2-5d11a8982eec,1,25,98,
+﻿session_code,extraction_number,extraction_time,water_temperature,notes
+a1876727-4672-4d56-a7f2-5d11a8982eec,1,25,98,Sour
+17F028CF-DFE4-4338-AA60-B708BC562C45,1,28,98,Sour
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,1,27,100,Getting better; less sour

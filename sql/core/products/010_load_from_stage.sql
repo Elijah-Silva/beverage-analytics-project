@@ -6,9 +6,7 @@ INSERT INTO core.products (
 	vendor_id,
 	region,
 	is_active,
-	notes,
-	created_date,
-	last_modified_date
+	notes
 )
 SELECT
 	p.product_name,
@@ -16,9 +14,7 @@ SELECT
 	cv.vendor_id,
 	p.region,
 	p.is_active,
-	p.notes,
-	p.created_date,
-	p.last_modified_date
+	p.notes
 FROM stage.products    p
 JOIN core.vendors      cv
 	ON cv.vendor_name = p.vendor_name

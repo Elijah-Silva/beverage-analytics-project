@@ -18,9 +18,7 @@ CREATE TABLE products (
     tea_type            TEXT,
     cultivar            TEXT,
     is_active           TEXT,
-    notes               TEXT,
-    created_date        TEXT,
-    last_modified_date  TEXT
+    notes               TEXT
 
     /*
     -- ingest metadata (critical!)

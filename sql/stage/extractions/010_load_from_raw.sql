@@ -6,13 +6,13 @@ INSERT INTO extractions (
 	extraction_number,
 	extraction_time,
 	water_temperature,
-	flavor_notes
+	notes
 )
 SELECT
 	session_code::UUID,
 	extraction_number::INT,
 	extraction_time::INT,
 	water_temperature::INT,
-	NULLIF(TRIM(flavor_notes),'')
+	NULLIF(TRIM(notes),'')
 FROM raw.extractions;
 

@@ -46,64 +46,6 @@ GROUP BY p.product_id, p.product_name
 ORDER BY p.product_name;
 
 
-CREATE VIEW util.recent_sessions AS
-WITH get_espresso_quantity AS
-	     (SELECT
-		      sbi.session_id,
-		      sbi.quantity_used,
-		      sbi.quantity_output
-	      FROM core.session_batch_inventory sbi
-	      JOIN core.batch_inventory         bi
-		      USING (batch_inventory_id)
-	      JOIN core.products                p
-		      USING (product_id)
-	      WHERE role_id = (SELECT
-		                       role_id
-	                       FROM ref.roles
-	                       WHERE role_name = 'Espresso Dose'))
-SELECT
-	s.session_id,
-	s.session_date::DATE,
-	s.session_type,
-	bm.brewing_method_name,
-	(SELECT
-		 STRING_AGG(product_name, ', ') AS tea_coffee_used
-	 FROM core.session_batch_inventory sbi
-	 JOIN core.batch_inventory         bi
-		 USING (batch_inventory_id)
-	 JOIN core.products                p
-		 USING (product_id)
-	 WHERE role_id IN (SELECT
-		                   role_id
-	                   FROM ref.roles
-	                   WHERE role_name IN ('Espresso Dose', 'Tea Dose'))),
-	s.rating,
-	geq.quantity_used,
-	geq.quantity_output,
-	s.grind_size,
-	e.extraction_time,
-	e.water_temperature,
-	(SELECT
-		 STRING_AGG(product_name, ', ') AS equipment_used
-	 FROM core.session_batch_inventory sbi
-	 JOIN core.batch_inventory         bi
-		 USING (batch_inventory_id)
-	 JOIN core.products                p
-		 USING (product_id)
-	 WHERE role_id IN (SELECT
-		                   role_id
-	                   FROM ref.roles
-	                   WHERE role_name NOT IN ('Espresso Dose', 'Tea Dose'))),
-	s.notes,
-	e.flavor_notes
-FROM core.sessions              s
-LEFT JOIN core.extractions      e
-	USING (session_code)
-LEFT JOIN get_espresso_quantity geq
-	ON geq.session_id = s.session_id
-JOIN ref.brewing_methods        bm
-	USING (brewing_method_id);
-
 SELECT *
 FROM util.v_batch_inventory_remaining
 ORDER BY is_in_stock DESC, product_id, consumed_qty DESC;
@@ -114,6 +56,3 @@ FROM util.v_inventory_by_product
 ORDER BY product_id;
  */
 
-SELECT *
-FROM util.recent_sessions
-ORDER BY session_date DESC;

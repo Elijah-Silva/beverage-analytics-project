@@ -5,5 +5,5 @@ CREATE TABLE extractions (
 	extraction_number	INT,
 	extraction_time		INT,
 	water_temperature	INT,
-	flavor_notes		TEXT
+	notes		TEXT
 );

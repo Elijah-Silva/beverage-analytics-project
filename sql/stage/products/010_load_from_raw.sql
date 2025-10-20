@@ -26,9 +26,7 @@ INSERT INTO stage.raw_products (
 	tea_type,
 	cultivar,
 	is_active,
-	notes,
-	created_date,
-	last_modified_date
+	notes
 )
 SELECT
 	TRIM(product_name),
@@ -48,9 +46,7 @@ SELECT
 	TRIM(tea_type),
 	TRIM(cultivar),
 	is_active::BOOLEAN,
-	TRIM(notes),
-	created_date::DATE,
-	last_modified_date::DATE
+	TRIM(notes)
 FROM raw.products;
 
 -- 2) Slim main stage table (for core.products)
@@ -60,9 +56,7 @@ INSERT INTO stage.products (
 	vendor_name,
 	region,
 	is_active,
-	notes,
-	created_date,
-	last_modified_date
+	notes
 )
 SELECT
 	product_name,
@@ -70,9 +64,7 @@ SELECT
 	vendor_name,
 	region,
 	is_active,
-	notes,
-	created_date,
-	last_modified_date
+	notes
 FROM stage.raw_products;
 
 -- 3) Route to subtypes (match the same UPPER convention)

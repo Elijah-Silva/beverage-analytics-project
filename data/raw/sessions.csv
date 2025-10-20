@@ -1,2 +1,4 @@
 session_code,brewing_method_name,rating,water_type,session_type,session_date,favorite_flag,session_location_name,location_name,grind_size,notes
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Espresso,1,Filtered,Coffee,2025-10-16,FALSE,Home,Home,11,Sour
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Espresso,1,Filtered,Coffee,2025-10-16,FALSE,Home,Mom's,11,
+17F028CF-DFE4-4338-AA60-B708BC562C45,Espresso,1,Filtered,Coffee,2025-10-17,FALSE,Home,Mom's,9,
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Espresso,1,Filtered,Coffee,2025-10-17,FALSE,Home,Mom's,5,

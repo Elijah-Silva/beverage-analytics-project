@@ -6,7 +6,5 @@ CREATE TABLE orders (
     order_number		TEXT,
 	shipping_cost		TEXT,
 	total_cost			TEXT,
-	order_status		TEXT,
-	created_date 		TEXT,
-	last_modified_date 	TEXT
+	order_status		TEXT
 );

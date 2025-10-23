@@ -72,6 +72,7 @@ VALUES
   	('Aluminum', 'Metal'),
 
   -- Natural Materials
+  	('Paper', 'Natural'),
   	('Wood', 'Natural'),
   	('Bamboo', 'Natural'),
 

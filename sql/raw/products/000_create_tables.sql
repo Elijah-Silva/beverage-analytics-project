@@ -2,6 +2,7 @@ SET SEARCH_PATH = raw;
 
 CREATE TABLE products (
     product_name        TEXT,
+	product_alt_name    TEXT,
     product_type        TEXT,
     vendor_name         TEXT,
     region              TEXT,

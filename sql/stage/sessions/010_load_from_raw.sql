@@ -45,7 +45,7 @@ SELECT
 	TRIM(product_name),
 	TRIM(vendor_name),
 	production_date::DATE,
-	quantity_used::INT,
+	quantity_used::NUMERIC,
 	quantity_output::NUMERIC,
 	TRIM(role),
 	TRIM(batch_code),

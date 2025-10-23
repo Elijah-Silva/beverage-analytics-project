@@ -12,6 +12,7 @@ SELECT
 		WHEN r.role_id IS NULL THEN 'NO_MATCH_ROLE'
 		WHEN s.session_id IS NULL THEN 'NO_MATCH_SESSION'
 		WHEN p.product_id IS NULL THEN 'NO_MATCH_PRODUCT'
+		WHEN bi.batch_inventory_id IS NULL THEN 'NO_MATCH_BATCH_INVENTORY'
 		ELSE 'OTHER'
 		END AS reason
 FROM stage.session_batch_inventory sbi
@@ -23,10 +24,13 @@ LEFT JOIN core.sessions            s
 	ON s.session_code = sbi.session_code
 LEFT JOIN core.products            p
 	ON p.product_name = sbi.product_name AND p.vendor_id = v.vendor_id
+LEFT JOIN core.batch_inventory      bi
+ON bi.product_id = p.product_id
 WHERE v.vendor_id IS NULL
    OR r.role_id IS NULL
    OR s.session_id IS NULL
-   OR p.product_id IS NULL;
+   OR p.product_id IS NULL
+	OR bi.batch_inventory_id IS NULL;
 
 -- vendors
 CREATE OR REPLACE VIEW util.vendors_fk_review AS

@@ -3,6 +3,7 @@ SET search_path TO stage;
 CREATE TABLE raw_products
 (
 	product_name       TEXT NOT NULL,
+	product_alt_name   TEXT,
 	product_type       TEXT,
 	vendor_name        TEXT,
 	region             TEXT,
@@ -25,6 +26,7 @@ CREATE TABLE raw_products
 CREATE TABLE products
 (
 	product_name       TEXT NOT NULL,
+	product_alt_name    TEXT,
 	product_type       TEXT,
 	vendor_name        TEXT,
 	region             TEXT,
@@ -36,6 +38,7 @@ CREATE TABLE products
 CREATE TABLE IF NOT EXISTS products_tea
 (
 	product_name      TEXT NOT NULL,
+	product_alt_name    TEXT,
 	vendor_name       TEXT,
 	tea_type          TEXT,
 	cultivar          TEXT,
@@ -46,6 +49,7 @@ CREATE TABLE IF NOT EXISTS products_tea
 CREATE TABLE IF NOT EXISTS products_coffee
 (
 	product_name      TEXT NOT NULL,
+	product_alt_name    TEXT,
 	vendor_name       TEXT,
 	roast_level       TEXT,
 	origin_type       TEXT,
@@ -57,6 +61,7 @@ CREATE TABLE IF NOT EXISTS products_coffee
 CREATE TABLE IF NOT EXISTS products_equipment
 (
 	product_name TEXT NOT NULL,
+	product_alt_name    TEXT,
 	vendor_name  TEXT,
 	material     TEXT,
 	volume       INT,

@@ -10,6 +10,7 @@ TRUNCATE stage.products_equipment;
 -- 1) Clean + cast from raw into a staging buffer (stage.raw_products)
 INSERT INTO stage.raw_products (
 	product_name,
+	product_alt_name,
 	product_type,
 	vendor_name,
 	region,
@@ -30,6 +31,7 @@ INSERT INTO stage.raw_products (
 )
 SELECT
 	TRIM(product_name),
+	TRIM(product_alt_name),
 	TRIM(product_type),
 	TRIM(vendor_name),
 	TRIM(region),
@@ -52,6 +54,7 @@ FROM raw.products;
 -- 2) Slim main stage table (for core.products)
 INSERT INTO stage.products (
 	product_name,
+	product_alt_name,
 	product_type,
 	vendor_name,
 	region,
@@ -60,6 +63,7 @@ INSERT INTO stage.products (
 )
 SELECT
 	product_name,
+	product_alt_name,
 	product_type,
 	vendor_name,
 	region,
@@ -71,6 +75,7 @@ FROM stage.raw_products;
 -- TEA
 INSERT INTO stage.products_tea (
 	product_name,
+	product_alt_name,
 	vendor_name,
 	tea_type,
 	cultivar,
@@ -79,6 +84,7 @@ INSERT INTO stage.products_tea (
 )
 SELECT
 	product_name,
+	product_alt_name,
 	vendor_name,
 	tea_type,
 	cultivar,
@@ -90,6 +96,7 @@ WHERE product_type = 'Tea';
 -- COFFEE
 INSERT INTO stage.products_coffee (
 	product_name,
+	product_alt_name,
 	vendor_name,
 	roast_level,
 	origin_type,
@@ -99,6 +106,7 @@ INSERT INTO stage.products_coffee (
 )
 SELECT
 	product_name,
+	product_alt_name,
 	vendor_name,
 	roast_level,
 	origin_type,
@@ -111,6 +119,7 @@ WHERE product_type = 'Coffee';
 -- EQUIPMENT
 INSERT INTO stage.products_equipment (
 	product_name,
+	product_alt_name,
 	vendor_name,
 	material,
 	volume,
@@ -120,6 +129,7 @@ INSERT INTO stage.products_equipment (
 )
 SELECT
 	product_name,
+	product_alt_name,
 	vendor_name,
 	material,
 	volume,

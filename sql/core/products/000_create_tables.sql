@@ -4,6 +4,7 @@ CREATE TABLE products
 (
 	product_id         INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 	product_name       TEXT    NOT NULL,
+	product_alt_name   TEXT    NOT NULL,
 	product_type_id    INT     NOT NULL,
 	vendor_id          INT     NOT NULL,
 	region             TEXT,

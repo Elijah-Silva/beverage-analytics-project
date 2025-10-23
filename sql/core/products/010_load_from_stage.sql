@@ -2,6 +2,7 @@ SET SEARCH_PATH = core;
 
 INSERT INTO core.products (
 	product_name,
+	product_alt_name,
 	product_type_id,
 	vendor_id,
 	region,
@@ -10,6 +11,7 @@ INSERT INTO core.products (
 )
 SELECT
 	p.product_name,
+	p.product_alt_name,
 	pt.product_type_id,
 	cv.vendor_id,
 	p.region,

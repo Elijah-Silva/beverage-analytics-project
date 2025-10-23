@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/dbt" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/sql/bootstrap/000_create_schemas.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/extractions/000_create_tables.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/core/extractions/010_load_from_stage.sql" dialect="PostgreSQL" />
@@ -57,6 +58,7 @@
     <file url="file://$PROJECT_DIR$/sql/util/020_fk_review_views.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/util/060_check_dq_issues.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/sql/util/100_inv_view.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/sql/util/110_session_view.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>

@@ -51,8 +51,7 @@ FROM (
 	        ('MISSING_SESSION_DATE', session_date IS NULL),
 	        ('MISSING_FAVORITE_FLAG', favorite_flag IS NULL),
 	        ('MISSING_SESSION_LOCATION', session_location_name IS NULL),
-	        ('MISSING_LOCATION_NAME', location_name IS NULL),
-	        ('MISSING_GRIND_SIZE', grind_size IS NULL)
+	        ('MISSING_LOCATION_NAME', location_name IS NULL)
 	) AS checks(issue_type, is_null)
 	WHERE is_null
 	GROUP BY issue_type

@@ -1,13 +1,52 @@
-﻿session_code,product_name,vendor_name,production_date,quantity_used,quantity_output,role,batch_code,unit
-A1876727-4672-4D56-A7F2-5D11A8982EEC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.1,Espresso Dose,,g
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
-A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
-17F028CF-DFE4-4338-AA60-B708BC562C45,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,55,Espresso Dose,,g
-17F028CF-DFE4-4338-AA60-B708BC562C45,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
-17F028CF-DFE4-4338-AA60-B708BC562C45,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
-17F028CF-DFE4-4338-AA60-B708BC562C45,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.8,Espresso Dose,,g
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+session_code,product_name,vendor_name,production_date,quantity_used,quantity_output,role,batch_code,unit,quantity_out
+A1876727-4672-4D56-A7F2-5D11A8982EEC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.1,Espresso Dose,,g,
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+17F028CF-DFE4-4338-AA60-B708BC562C45,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,55,Espresso Dose,,g,
+17F028CF-DFE4-4338-AA60-B708BC562C45,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+17F028CF-DFE4-4338-AA60-B708BC562C45,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+17F028CF-DFE4-4338-AA60-B708BC562C45,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.8,Espresso Dose,,g,
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+A7EE7061-B231-4290-9155-5F5BBC22AD24,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,61.5,Espresso Dose,,g,
+A7EE7061-B231-4290-9155-5F5BBC22AD24,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+A7EE7061-B231-4290-9155-5F5BBC22AD24,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+A7EE7061-B231-4290-9155-5F5BBC22AD24,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.5,Espresso Dose,,g,
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.3,Espresso Dose,,g,
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+0704C5EB-D64E-449A-8367-6DD1855D6773,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,36,Espresso Dose,,g,
+0704C5EB-D64E-449A-8367-6DD1855D6773,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+0704C5EB-D64E-449A-8367-6DD1855D6773,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+0704C5EB-D64E-449A-8367-6DD1855D6773,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+0704C5EB-D64E-449A-8367-6DD1855D6773,Robot Paper Filters,Cafune,,1,,Accessories,,pcs,
+12596748-E42D-4F4F-99D8-E892D29176BE,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,35,Espresso Dose,,g,
+12596748-E42D-4F4F-99D8-E892D29176BE,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+12596748-E42D-4F4F-99D8-E892D29176BE,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+12596748-E42D-4F4F-99D8-E892D29176BE,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+12596748-E42D-4F4F-99D8-E892D29176BE,Robot Paper Filters,Cafune,,1,,Accessories,,pcs,
+36DFD6C6-ABCA-4873-A0EE-F550002197A2,Hundred years Lapsang Souchong Smoked Style,Wuyi Origin,2021-01-01,2,250,Tea Dose,,g,
+36DFD6C6-ABCA-4873-A0EE-F550002197A2,Hario 300ml Teapot,Amazon,,1,,Teapot,,pcs,
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,54.8,Espresso Dose,,g,
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,Robot Paper Filters,Cafune,,1,,Accessories,,pcs,
+ECD51B5D-E5F9-4116-A807-F972C910D217,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18,245.8,Espresso Dose,,g,
+ECD51B5D-E5F9-4116-A807-F972C910D217,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+ECD51B5D-E5F9-4116-A807-F972C910D217,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+ECD51B5D-E5F9-4116-A807-F972C910D217,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+ECD51B5D-E5F9-4116-A807-F972C910D217,Robot Paper Filters,Cafune,,1,,Accessories,,pcs,
+7074EE63-4C8E-4444-94B6-675473A482FC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18,55.1,Espresso Dose,,g,
+7074EE63-4C8E-4444-94B6-675473A482FC,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs,
+7074EE63-4C8E-4444-94B6-675473A482FC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs,
+7074EE63-4C8E-4444-94B6-675473A482FC,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs,
+7074EE63-4C8E-4444-94B6-675473A482FC,Robot Paper Filters,Cafune,,1,,Accessories,,pcs,

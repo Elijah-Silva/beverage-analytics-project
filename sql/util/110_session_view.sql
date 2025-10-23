@@ -16,12 +16,12 @@ WITH get_espresso_quantity AS
 	                       FROM ref.roles
 	                       WHERE role_name = 'Espresso Dose'))
 SELECT
-	s.session_id as id,
-	s.session_date::DATE as date,
-	s.session_type as category,
-	bm.brewing_method_name as brew,
+	s.session_id           AS id,
+	s.session_date::DATE   AS date,
+	s.session_type         AS category,
+	bm.brewing_method_name AS brew,
 	(SELECT
-		 STRING_AGG(product_name, ', ') AS ingredient
+		 STRING_AGG(product_alt_name, ', ') AS ingredient
 	 FROM core.session_batch_inventory sbi
 	 JOIN core.batch_inventory         bi
 		 USING (batch_inventory_id)
@@ -30,15 +30,16 @@ SELECT
 	 WHERE role_id IN (SELECT
 		                   role_id
 	                   FROM ref.roles
-	                   WHERE role_name IN ('Espresso Dose', 'Tea Dose'))),
+	                   WHERE role_name IN ('Espresso Dose', 'Tea Dose'))
+	   AND session_id = s.session_id),
 	s.rating,
-	geq.quantity_used as input,
-	geq.quantity_output as output,
-	s.grind_size as grind,
-	e.extraction_time as time,
-	e.water_temperature as temp,
+	geq.quantity_used      AS input,
+	geq.quantity_output    AS output,
+	s.grind_size           AS grind,
+	e.extraction_time      AS time,
+	e.water_temperature    AS temp,
 	(SELECT
-		 STRING_AGG(product_name, ', ') AS equipment
+		 STRING_AGG(product_alt_name, ', ') AS equipment
 	 FROM core.session_batch_inventory sbi
 	 JOIN core.batch_inventory         bi
 		 USING (batch_inventory_id)
@@ -47,9 +48,10 @@ SELECT
 	 WHERE role_id IN (SELECT
 		                   role_id
 	                   FROM ref.roles
-	                   WHERE role_name NOT IN ('Espresso Dose', 'Tea Dose'))),
-	s.notes as session_notes,
-	e.notes as extraction_notes
+	                   WHERE role_name NOT IN ('Espresso Dose', 'Tea Dose'))
+	   AND session_id = s.session_id),
+	s.notes                AS session_notes,
+	e.notes                AS extraction_notes
 FROM core.sessions              s
 LEFT JOIN core.extractions      e
 	USING (session_code)
@@ -58,6 +60,7 @@ LEFT JOIN get_espresso_quantity geq
 JOIN ref.brewing_methods        bm
 	USING (brewing_method_id);
 
+
 SELECT *
 FROM util.recent_sessions
-ORDER BY date DESC;
+ORDER BY date ASC;

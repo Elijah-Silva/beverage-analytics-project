@@ -98,12 +98,13 @@ This project was built while studying:
 ## 📌 Roadmap  
 
 - [x] OLTP schema (Postgres)  
-- [x] DDL + sample data  
+- [x] DDL + sample data
+- [ ] Data entry UI using Streamlit
 - [ ] Draft star schema ERD
 - [ ] Implement star schema (Postgres)
 - [ ] dbt practice project  
 - [ ] Implement star schema in dbt
-- [ ] Streamlit UI for data entry + dashboards  
+- [ ] Dashboard using Streamlit
 - [ ] Weather API integration  
 - [ ] Query tuning + indexes  
 - [ ] Orchestration with Prefect/Airflow  
@@ -126,5 +127,6 @@ This project demonstrates skills for:
 - **Analytics Engineer** → dbt modeling, star schema, testing, dashboarding  
 - **Data Engineer** → pipelines, orchestration, CI/CD, monitoring, cloud warehouse  
 - **Data Architect** → schema design, ADRs, governance, system architecture  
+
 
 

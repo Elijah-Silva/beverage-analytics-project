@@ -7,7 +7,7 @@ CREATE TABLE sessions
 	rating                INT,
 	water_type            TEXT,
 	session_type          TEXT,
-	session_date          DATE,
+	session_date          TIMESTAMPTZ,
 	favorite_flag         BOOLEAN,
 	session_location_name TEXT,
 	location_name         TEXT,

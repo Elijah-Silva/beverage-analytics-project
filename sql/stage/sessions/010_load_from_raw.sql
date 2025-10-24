@@ -20,7 +20,7 @@ SELECT
 	rating::INT,
 	TRIM(water_type),
 	TRIM(session_type),
-	session_date::DATE,
+	session_date::TIMESTAMPTZ,
 	favorite_flag::BOOLEAN,
 	TRIM(session_location_name),
 	TRIM(location_name),

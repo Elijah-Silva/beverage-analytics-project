@@ -23,7 +23,7 @@ VALUES
 
 INSERT INTO session_locations (session_location_name)
 VALUES
-	('Home'),
+	('House'),
 	('Shop'),
 	('Outdoors'),
 	('Work'),

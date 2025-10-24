@@ -97,13 +97,11 @@ echo ""
 # current inventory table
 echo "------------------------"
 echo "-- Current inventory  --"
-echo "------------------------"
 echo ""
 $PSQL -f "$SQL_DIR/util/100_inv_view.sql"
 
 # recent session table
 echo "----------------------"
 echo "-- Recent sessions  --"
-echo "----------------------"
 echo ""
 $PSQL -f "$SQL_DIR/util/110_session_view.sql"

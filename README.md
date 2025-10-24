@@ -117,7 +117,11 @@ This project was built while studying:
 
 ## 📸 Screenshots  
 
-*(Add images/GIFs of your Streamlit dashboard here)*  
+![Screenshot #1](docs/streamlit_screenshots/bev_app_1.png)
+![Screenshot #2](docs/streamlit_screenshots/bev_app_2.png)  
+![Screenshot #3](docs/streamlit_screenshots/bev_app_3.png)  
+![Screenshot #4](docs/streamlit_screenshots/bev_app_4.png)  
+![Screenshot #5](docs/streamlit_screenshots/bev_app_5.png)  
 
 ---
 
@@ -127,6 +131,7 @@ This project demonstrates skills for:
 - **Analytics Engineer** → dbt modeling, star schema, testing, dashboarding  
 - **Data Engineer** → pipelines, orchestration, CI/CD, monitoring, cloud warehouse  
 - **Data Architect** → schema design, ADRs, governance, system architecture  
+
 
 
 

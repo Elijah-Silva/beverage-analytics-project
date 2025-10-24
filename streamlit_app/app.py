@@ -42,34 +42,32 @@ def main():
 
         st.header('Log Brew')
 
-        session_code = uuid.uuid4()
-        # st.write(f"Session Code: {session_code}")
+        if 'session_code' not in st.session_state:
+            st.session_state.session_code = uuid.uuid4()
+
         st.subheader('General Information')
 
-        favorite_flag = st.checkbox("Favorite Flag")
+        st.info(f'Session code: {st.session_state.session_code}')
+
 
         col1, col2, col3 = st.columns(3)
+
+
         with col1:
-            brew_method = st.selectbox(
-                "Brew Method",
-                ("Espresso", "Western"),
-                index=None,
-                placeholder="Select brew method...",
-            )
-            water_type = st.selectbox(
+
+            rating = st.slider("Rating", min_value=0, step=1, max_value=10)
+            favorite_flag = st.checkbox("Favorite Flag")
+
+            water_type = st.radio(
                 "Water Type",
-                ("Filtered", "Tap"),
-                index=None,
-                placeholder="Select water type...",
+                ("Filtered", "Tap", "Spring"),
+                index=None
             )
-            session_type = st.selectbox(
+            session_type = st.radio(
                 "Session Type",
                 ("Coffee", "Tea"),
                 index=None,
-                placeholder="Select session type...",
             )
-            water_temperature = st.number_input("Water Temperature", min_value=0, step=1, max_value=100)
-
 
         with col2:
             session_date = st.date_input("Session Date", format="YYYY-MM-DD")
@@ -77,21 +75,31 @@ def main():
             session_datetime = str(session_date) + " " + str(session_time)
             session_location_name = st.selectbox(
                 "Session Location Name",
-                ("House", "Cafe", "Outdoors"),
+                ("House", "Shop", "Outdoors", "Work", "Ceremonial"),
                 index=None,
                 placeholder="Select session location...",
             )
+
             location_name = st.selectbox(
                 "Session Location Name",
-                ("Home", "Mom's"),
+                ("Quebec Ave", "Mom's"),
                 index=None,
                 placeholder="Select location...",
             )
+
+
         with col3:
-            rating = st.slider("Rating", min_value=0, step=1, max_value=10)
+            brew_method = st.selectbox(
+                "Brew Method",
+                ("Espresso", "Western", "Gongfu", "Grandpa", "Kyusu", "Cold Brew", "Matcha", "Filter", "Moka", "Pour Over"),
+                index=None,
+                placeholder="Select brew method...",
+            )
             grind_size = st.number_input("Grind Size", min_value=0.0, max_value=30.0, step=0.1, format="%0.1f")
             extraction_number = 1
             extraction_time = st.number_input("Extraction Time", min_value=0, step=1, max_value=10000)
+
+            water_temperature = st.number_input("Water Temperature", min_value=0, step=1, max_value=100)
 
         st.subheader("Notes")
 
@@ -133,7 +141,7 @@ def main():
             )
 
         new_ingredient_rows = pd.DataFrame([{
-            "session_code": session_code,
+            "session_code": st.session_state.session_code,
             "product_name": ingredient_name,
             "vendor_name": ingredient_vendor_name,
             "production_date": production_date,
@@ -200,7 +208,7 @@ def main():
             with col3:
                 entry["role"] = st.selectbox(
                     "Role",
-                    ("Accessories", "Cup"),
+                    ("Accessories", "Cup", "Kettle", "Teapot", "Gongfu", "Faircup", "Espresso Maker"),
                     index=0,
                     key=f"role_{i}"
                 )
@@ -208,7 +216,7 @@ def main():
         new_equipment_rows = pd.DataFrame(st.session_state.entries)
 
         # insert first column at position 0
-        new_equipment_rows.insert(0, "session_code", session_code)
+        new_equipment_rows.insert(0, "session_code", st.session_state.session_code,)
 
         # for remaining columns, safest is to just assign them
         new_equipment_rows["production_date"] = np.nan
@@ -238,7 +246,7 @@ def main():
         st.write('-------------')
 
         if st.button("Add new rows to csv files", width="stretch", type="primary"):
-            new_session_row = pd.DataFrame([[session_code,
+            new_session_row = pd.DataFrame([[st.session_state.session_code,
                                              brew_method,
                                              rating,
                                              water_type,
@@ -254,7 +262,7 @@ def main():
             st.session_state["sessions"].to_csv(f"{csv_file_path}/sessions.csv", index=False)
             st.success("Session row added!")
 
-            new_extraction_row = pd.DataFrame([[session_code,
+            new_extraction_row = pd.DataFrame([[st.session_state.session_code,
                                                 extraction_number,
                                                 extraction_time,
                                                 water_temperature,

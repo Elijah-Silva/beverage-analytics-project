@@ -5,7 +5,7 @@ This project demonstrates the full lifecycle of a modern data platform using a *
 
 - **OLTP database (Postgres)** → normalized schema for data entry
 - **Data warehouse (dbt)** → star schema for analytics  
-- **External data integration** → Weather API joined to consumption patterns  
+- **External data integration** → Weather API joined to consumption patterns 
 - **Dashboard (Streamlit)** → UI for data entry + visualizations  
 - **Productionization** → CI, orchestration (Airflow/Prefect), monitoring  
 - **Cloud migration** → transition from Postgres to Snowflake/BigQuery  
@@ -82,16 +82,21 @@ beverage-analytics-project/
 ## 📚 References  
 
 This project was built while studying:  
-- *The Data Warehouse Toolkit* (Kimball)  
-- *Agile Data Warehouse Design* (Corr)  
-- *Star Schema: The Complete Reference* (Adamson)  
-- *Art of SQL* (Celko)  
-- *SQL Antipatterns* (Viescas)  
-- *SQL Performance Explained* (Winand)  
-- *Art of PostgreSQL* (Laplace)  
-- *Fundamentals of Data Engineering* (Housley & Kononenko)  
-- *Designing Data-Intensive Applications* (Kleppmann)  
-- [DE Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)  
+- [x] *Learning SQL* (Beaulieu)
+- [x] [*CS50 SQL (Harvard)*](https://cs50.harvard.edu/sql/)
+- [x] *Database Design for Mere Mortals* (Hernandez)
+- [x] [*Databases: Relational Databases and SQL (Stanford)*](https://www.edx.org/learn/relational-databases/stanford-university-databases-relational-databases-and-sql)
+- [ ] [Mastering PostgreSQL (Francis)](https://masteringpostgres.com)
+- [ ] *SQL Antipatterns* (Karwin)
+- [ ] *The Data Warehouse Toolkit* (Kimball)  
+- [ ] *Agile Data Warehouse Design* (Corr)  
+- [ ] *Star Schema: The Complete Reference* (Adamson)
+- [ ] *Art of SQL* (Faroult)  
+- [ ] *SQL Performance Explained* (Winand)  
+- [ ] *Art of PostgreSQL* (Fontaine)  
+- [ ] *Fundamentals of Data Engineering* (Reis)  
+- [ ] *Designing Data-Intensive Applications* (Kleppmann)  
+- [ ] [DE Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)  
 
 ---
 
@@ -99,12 +104,12 @@ This project was built while studying:
 
 - [x] OLTP schema (Postgres)  
 - [x] DDL + sample data
-- [ ] Data entry UI using Streamlit
+- [ ] Data entry/CRUD UI using Streamlit
 - [ ] Draft star schema ERD
 - [ ] Implement star schema (Postgres)
 - [ ] dbt practice project  
 - [ ] Implement star schema in dbt
-- [ ] Dashboard using Streamlit
+- [ ] Analytical dashboard using Streamlit
 - [ ] Weather API integration  
 - [ ] Query tuning + indexes  
 - [ ] Orchestration with Prefect/Airflow  
@@ -134,6 +139,7 @@ This project demonstrates skills for:
 - **Analytics Engineer** → dbt modeling, star schema, testing, dashboarding  
 - **Data Engineer** → pipelines, orchestration, CI/CD, monitoring, cloud warehouse  
 - **Data Architect** → schema design, ADRs, governance, system architecture  
+
 
 
 

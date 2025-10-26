@@ -4,9 +4,9 @@
 This project demonstrates the full lifecycle of a modern data platform using a **beverage consumption tracker** (coffee/tea).  
 
 - **OLTP database (Postgres)** → normalized schema for data entry
-- **Data warehouse (dbt)** → star schema for analytics  
-- **External data integration** → Weather API joined to consumption patterns 
+- **Data warehouse (dbt)** → star schema for analytics
 - **Dashboard (Streamlit)** → UI for data entry + visualizations  
+- **External data integration** → Weather API joined to consumption patterns 
 - **Productionization** → CI, orchestration (Airflow/Prefect), monitoring  
 - **Cloud migration** → transition from Postgres to Snowflake/BigQuery  
 
@@ -139,6 +139,7 @@ This project demonstrates skills for:
 - **Analytics Engineer** → dbt modeling, star schema, testing, dashboarding  
 - **Data Engineer** → pipelines, orchestration, CI/CD, monitoring, cloud warehouse  
 - **Data Architect** → schema design, ADRs, governance, system architecture  
+
 
 
 

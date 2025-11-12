@@ -1,172 +1,177 @@
 session_code,product_name,vendor_name,production_date,quantity_used,quantity_output,role,batch_code,unit
-A1876727-4672-4D56-A7F2-5D11A8982EEC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,32.1,Espresso Dose,,g
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-A1876727-4672-4D56-A7F2-5D11A8982EEC,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-17F028CF-DFE4-4338-AA60-B708BC562C45,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,55.0,Espresso Dose,,g
-17F028CF-DFE4-4338-AA60-B708BC562C45,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-17F028CF-DFE4-4338-AA60-B708BC562C45,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-17F028CF-DFE4-4338-AA60-B708BC562C45,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,32.8,Espresso Dose,,g
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-A7EE7061-B231-4290-9155-5F5BBC22AD24,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,61.5,Espresso Dose,,g
-A7EE7061-B231-4290-9155-5F5BBC22AD24,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-A7EE7061-B231-4290-9155-5F5BBC22AD24,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-A7EE7061-B231-4290-9155-5F5BBC22AD24,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-4AF15FB1-3E45-45C3-ADA8-391836EB45F3,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,32.5,Espresso Dose,,g
-4AF15FB1-3E45-45C3-ADA8-391836EB45F3,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-4AF15FB1-3E45-45C3-ADA8-391836EB45F3,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-4AF15FB1-3E45-45C3-ADA8-391836EB45F3,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-9C8DB895-0E91-4010-8F05-209C9B60EDA0,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,32.3,Espresso Dose,,g
-9C8DB895-0E91-4010-8F05-209C9B60EDA0,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-9C8DB895-0E91-4010-8F05-209C9B60EDA0,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-9C8DB895-0E91-4010-8F05-209C9B60EDA0,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-0704C5EB-D64E-449A-8367-6DD1855D6773,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,36.0,Espresso Dose,,g
-0704C5EB-D64E-449A-8367-6DD1855D6773,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-0704C5EB-D64E-449A-8367-6DD1855D6773,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-0704C5EB-D64E-449A-8367-6DD1855D6773,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-0704C5EB-D64E-449A-8367-6DD1855D6773,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-12596748-E42D-4F4F-99D8-E892D29176BE,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,35.0,Espresso Dose,,g
-12596748-E42D-4F4F-99D8-E892D29176BE,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-12596748-E42D-4F4F-99D8-E892D29176BE,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-12596748-E42D-4F4F-99D8-E892D29176BE,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-12596748-E42D-4F4F-99D8-E892D29176BE,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-36DFD6C6-ABCA-4873-A0EE-F550002197A2,Hundred years Lapsang Souchong Smoked Style,Wuyi Origin,2021-01-01,2.0,250.0,Tea Dose,,g
-36DFD6C6-ABCA-4873-A0EE-F550002197A2,Hario 300ml Teapot,Amazon,,1.0,,Teapot,,pcs
+A1876727-4672-4D56-A7F2-5D11A8982EEC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.1,Espresso Dose,,g
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+A1876727-4672-4D56-A7F2-5D11A8982EEC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+A1876727-4672-4D56-A7F2-5D11A8982EEC,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+17F028CF-DFE4-4338-AA60-B708BC562C45,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,55,Espresso Dose,,g
+17F028CF-DFE4-4338-AA60-B708BC562C45,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+17F028CF-DFE4-4338-AA60-B708BC562C45,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+17F028CF-DFE4-4338-AA60-B708BC562C45,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.8,Espresso Dose,,g
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+399F6E17-4CCE-4F90-9695-BDFBBF7FB11C,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+A7EE7061-B231-4290-9155-5F5BBC22AD24,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,61.5,Espresso Dose,,g
+A7EE7061-B231-4290-9155-5F5BBC22AD24,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+A7EE7061-B231-4290-9155-5F5BBC22AD24,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+A7EE7061-B231-4290-9155-5F5BBC22AD24,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.5,Espresso Dose,,g
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+4AF15FB1-3E45-45C3-ADA8-391836EB45F3,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,32.3,Espresso Dose,,g
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+9C8DB895-0E91-4010-8F05-209C9B60EDA0,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+0704C5EB-D64E-449A-8367-6DD1855D6773,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,36,Espresso Dose,,g
+0704C5EB-D64E-449A-8367-6DD1855D6773,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+0704C5EB-D64E-449A-8367-6DD1855D6773,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+0704C5EB-D64E-449A-8367-6DD1855D6773,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+0704C5EB-D64E-449A-8367-6DD1855D6773,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+12596748-E42D-4F4F-99D8-E892D29176BE,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,35,Espresso Dose,,g
+12596748-E42D-4F4F-99D8-E892D29176BE,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+12596748-E42D-4F4F-99D8-E892D29176BE,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+12596748-E42D-4F4F-99D8-E892D29176BE,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+12596748-E42D-4F4F-99D8-E892D29176BE,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+36DFD6C6-ABCA-4873-A0EE-F550002197A2,Hundred years Lapsang Souchong Smoked Style,Wuyi Origin,2021-01-01,2,250,Tea Dose,,g
+36DFD6C6-ABCA-4873-A0EE-F550002197A2,Hario 300ml Teapot,Amazon,,1,,Teapot,,pcs
 D7B4C8C6-3445-4F07-A81A-C65C088A7998,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.1,54.8,Espresso Dose,,g
-D7B4C8C6-3445-4F07-A81A-C65C088A7998,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-D7B4C8C6-3445-4F07-A81A-C65C088A7998,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-D7B4C8C6-3445-4F07-A81A-C65C088A7998,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-D7B4C8C6-3445-4F07-A81A-C65C088A7998,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-ECD51B5D-E5F9-4116-A807-F972C910D217,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.0,55.0,Espresso Dose,,g
-ECD51B5D-E5F9-4116-A807-F972C910D217,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-ECD51B5D-E5F9-4116-A807-F972C910D217,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-ECD51B5D-E5F9-4116-A807-F972C910D217,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-ECD51B5D-E5F9-4116-A807-F972C910D217,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-7074EE63-4C8E-4444-94B6-675473A482FC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.0,55.1,Espresso Dose,,g
-7074EE63-4C8E-4444-94B6-675473A482FC,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-7074EE63-4C8E-4444-94B6-675473A482FC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-7074EE63-4C8E-4444-94B6-675473A482FC,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-7074EE63-4C8E-4444-94B6-675473A482FC,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-cd81de1c-6f33-4d99-b35f-89f023210b6a,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.0,54.1,Espresso Dose,,g
-cd81de1c-6f33-4d99-b35f-89f023210b6a,Cafelat Robot,Cafune,,1.0,,Accessories,,pcs
-cd81de1c-6f33-4d99-b35f-89f023210b6a,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-cd81de1c-6f33-4d99-b35f-89f023210b6a,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-cd81de1c-6f33-4d99-b35f-89f023210b6a,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-879be712-db51-41f8-a5e8-a575344b18b8,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18.0,57.0,Espresso Dose,,g
-879be712-db51-41f8-a5e8-a575344b18b8,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-879be712-db51-41f8-a5e8-a575344b18b8,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-879be712-db51-41f8-a5e8-a575344b18b8,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-879be712-db51-41f8-a5e8-a575344b18b8,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-a25aee85-c3d5-477d-94d1-aa821e1daf61,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16.0,54.3,Espresso Dose,,g
-a25aee85-c3d5-477d-94d1-aa821e1daf61,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-a25aee85-c3d5-477d-94d1-aa821e1daf61,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-a25aee85-c3d5-477d-94d1-aa821e1daf61,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-a25aee85-c3d5-477d-94d1-aa821e1daf61,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,44.0,Espresso Dose,,g
-a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-a45a9396-b4f1-4720-81ad-a4dccdddf4dc,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-a92a0d14-a95b-4713-8994-aa6073a1a672,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,53.2,Espresso Dose,,g
-a92a0d14-a95b-4713-8994-aa6073a1a672,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-a92a0d14-a95b-4713-8994-aa6073a1a672,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-a92a0d14-a95b-4713-8994-aa6073a1a672,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-a92a0d14-a95b-4713-8994-aa6073a1a672,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-2272ca92-4a62-4428-bed3-0a3706be9229,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,54.8,Espresso Dose,,g
-2272ca92-4a62-4428-bed3-0a3706be9229,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-2272ca92-4a62-4428-bed3-0a3706be9229,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-2272ca92-4a62-4428-bed3-0a3706be9229,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-2272ca92-4a62-4428-bed3-0a3706be9229,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,54.5,Espresso Dose,,g
-9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-9f5c5da2-700c-4d75-86db-f84e7b1db9c2,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-4c6178c5-4808-4034-8f5c-27feaec5d7f0,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,53.8,Espresso Dose,,g
-4c6178c5-4808-4034-8f5c-27feaec5d7f0,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-4c6178c5-4808-4034-8f5c-27feaec5d7f0,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-4c6178c5-4808-4034-8f5c-27feaec5d7f0,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-4c6178c5-4808-4034-8f5c-27feaec5d7f0,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,54.0,Espresso Dose,,g
-9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,56.0,Espresso Dose,,g
-d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-a52a0b0f-4096-4a36-8795-1f647f80dc88,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,56.6,Espresso Dose,,g
-a52a0b0f-4096-4a36-8795-1f647f80dc88,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-a52a0b0f-4096-4a36-8795-1f647f80dc88,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-a52a0b0f-4096-4a36-8795-1f647f80dc88,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-a52a0b0f-4096-4a36-8795-1f647f80dc88,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-ec79191b-c12d-430c-8ef2-1e8ec85e6469,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,55.6,Espresso Dose,,g
-ec79191b-c12d-430c-8ef2-1e8ec85e6469,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-ec79191b-c12d-430c-8ef2-1e8ec85e6469,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-ec79191b-c12d-430c-8ef2-1e8ec85e6469,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-ec79191b-c12d-430c-8ef2-1e8ec85e6469,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-8b376545-b97c-43e6-88fa-f44e5c2f9aea,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,55.9,Espresso Dose,,g
-8b376545-b97c-43e6-88fa-f44e5c2f9aea,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-8b376545-b97c-43e6-88fa-f44e5c2f9aea,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-8b376545-b97c-43e6-88fa-f44e5c2f9aea,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-8b376545-b97c-43e6-88fa-f44e5c2f9aea,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-7e096f20-8042-475b-8680-c49dbd5a2b56,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,54.6,Espresso Dose,,g
-7e096f20-8042-475b-8680-c49dbd5a2b56,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-7e096f20-8042-475b-8680-c49dbd5a2b56,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-7e096f20-8042-475b-8680-c49dbd5a2b56,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-7e096f20-8042-475b-8680-c49dbd5a2b56,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-618f6e66-9c1e-4341-996c-5807cb9ad246,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,56.7,Espresso Dose,,g
-618f6e66-9c1e-4341-996c-5807cb9ad246,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-618f6e66-9c1e-4341-996c-5807cb9ad246,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-618f6e66-9c1e-4341-996c-5807cb9ad246,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-618f6e66-9c1e-4341-996c-5807cb9ad246,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,56.8,Espresso Dose,,g
-c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-c01aca15-6c16-4fdc-8834-29ae9fd81c3e,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-81453a8a-7197-4f0b-838e-06eac879ce69,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,52.4,Espresso Dose,,g
-81453a8a-7197-4f0b-838e-06eac879ce69,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-81453a8a-7197-4f0b-838e-06eac879ce69,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-81453a8a-7197-4f0b-838e-06eac879ce69,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-81453a8a-7197-4f0b-838e-06eac879ce69,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,52.4,Espresso Dose,,g
-c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-c0884ebe-b56f-4fdb-b593-7f09d5b031d6,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-277feb34-5037-45b6-9c6f-863cb1b03128,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,56.3,Espresso Dose,,g
-277feb34-5037-45b6-9c6f-863cb1b03128,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-277feb34-5037-45b6-9c6f-863cb1b03128,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-277feb34-5037-45b6-9c6f-863cb1b03128,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-277feb34-5037-45b6-9c6f-863cb1b03128,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,55.7,Espresso Dose,,g
-e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-e84000f5-764c-4d5f-8e9d-f8eb3ac44189,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,55.4,Espresso Dose,,g
-da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-7c96d084-df95-44c4-93e4-3c624c6f88eb,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,54.6,Espresso Dose,,g
-7c96d084-df95-44c4-93e4-3c624c6f88eb,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-7c96d084-df95-44c4-93e4-3c624c6f88eb,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-7c96d084-df95-44c4-93e4-3c624c6f88eb,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-7c96d084-df95-44c4-93e4-3c624c6f88eb,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-da1b6753-b0e2-43ee-b028-d78472fc2cff,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,57.4,Espresso Dose,,g
-da1b6753-b0e2-43ee-b028-d78472fc2cff,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-da1b6753-b0e2-43ee-b028-d78472fc2cff,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-da1b6753-b0e2-43ee-b028-d78472fc2cff,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-da1b6753-b0e2-43ee-b028-d78472fc2cff,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
-10bc7b67-0b59-4a80-902d-812205541ab7,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18.0,56.0,Espresso Dose,,g
-10bc7b67-0b59-4a80-902d-812205541ab7,Cafelat Robot,Cafune,,1.0,,Espresso Maker,,pcs
-10bc7b67-0b59-4a80-902d-812205541ab7,Robot Paper Filters,Cafune,,1.0,,Accessories,,pcs
-10bc7b67-0b59-4a80-902d-812205541ab7,Subminimal Flick WDT Tool,Cafune,,1.0,,Accessories,,pcs
-10bc7b67-0b59-4a80-902d-812205541ab7,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1.0,,Cup,,pcs
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+D7B4C8C6-3445-4F07-A81A-C65C088A7998,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+ECD51B5D-E5F9-4116-A807-F972C910D217,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18,55,Espresso Dose,,g
+ECD51B5D-E5F9-4116-A807-F972C910D217,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+ECD51B5D-E5F9-4116-A807-F972C910D217,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+ECD51B5D-E5F9-4116-A807-F972C910D217,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+ECD51B5D-E5F9-4116-A807-F972C910D217,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+7074EE63-4C8E-4444-94B6-675473A482FC,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18,55.1,Espresso Dose,,g
+7074EE63-4C8E-4444-94B6-675473A482FC,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+7074EE63-4C8E-4444-94B6-675473A482FC,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+7074EE63-4C8E-4444-94B6-675473A482FC,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+7074EE63-4C8E-4444-94B6-675473A482FC,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+cd81de1c-6f33-4d99-b35f-89f023210b6a,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18,54.1,Espresso Dose,,g
+cd81de1c-6f33-4d99-b35f-89f023210b6a,Cafelat Robot,Cafune,,1,,Accessories,,pcs
+cd81de1c-6f33-4d99-b35f-89f023210b6a,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+cd81de1c-6f33-4d99-b35f-89f023210b6a,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+cd81de1c-6f33-4d99-b35f-89f023210b6a,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+879be712-db51-41f8-a5e8-a575344b18b8,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,18,57,Espresso Dose,,g
+879be712-db51-41f8-a5e8-a575344b18b8,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+879be712-db51-41f8-a5e8-a575344b18b8,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+879be712-db51-41f8-a5e8-a575344b18b8,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+879be712-db51-41f8-a5e8-a575344b18b8,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+a25aee85-c3d5-477d-94d1-aa821e1daf61,DAK Milky Cake Espresso,Eight Ounce Coffee,2025-09-21,16,54.3,Espresso Dose,,g
+a25aee85-c3d5-477d-94d1-aa821e1daf61,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+a25aee85-c3d5-477d-94d1-aa821e1daf61,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+a25aee85-c3d5-477d-94d1-aa821e1daf61,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+a25aee85-c3d5-477d-94d1-aa821e1daf61,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,44,Espresso Dose,,g
+a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+a45a9396-b4f1-4720-81ad-a4dccdddf4dc,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+a45a9396-b4f1-4720-81ad-a4dccdddf4dc,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+a92a0d14-a95b-4713-8994-aa6073a1a672,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,53.2,Espresso Dose,,g
+a92a0d14-a95b-4713-8994-aa6073a1a672,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+a92a0d14-a95b-4713-8994-aa6073a1a672,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+a92a0d14-a95b-4713-8994-aa6073a1a672,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+a92a0d14-a95b-4713-8994-aa6073a1a672,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+2272ca92-4a62-4428-bed3-0a3706be9229,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,54.8,Espresso Dose,,g
+2272ca92-4a62-4428-bed3-0a3706be9229,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+2272ca92-4a62-4428-bed3-0a3706be9229,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+2272ca92-4a62-4428-bed3-0a3706be9229,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+2272ca92-4a62-4428-bed3-0a3706be9229,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,54.5,Espresso Dose,,g
+9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+9f5c5da2-700c-4d75-86db-f84e7b1db9c2,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+9f5c5da2-700c-4d75-86db-f84e7b1db9c2,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+4c6178c5-4808-4034-8f5c-27feaec5d7f0,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,53.8,Espresso Dose,,g
+4c6178c5-4808-4034-8f5c-27feaec5d7f0,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+4c6178c5-4808-4034-8f5c-27feaec5d7f0,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+4c6178c5-4808-4034-8f5c-27feaec5d7f0,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+4c6178c5-4808-4034-8f5c-27feaec5d7f0,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,54,Espresso Dose,,g
+9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+9c3aca12-9cf4-46e2-bc6d-f90e27033d5b,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,56,Espresso Dose,,g
+d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+d2a8ce1c-8b0f-4baa-8f76-cfade9e5b0a1,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+a52a0b0f-4096-4a36-8795-1f647f80dc88,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,56.6,Espresso Dose,,g
+a52a0b0f-4096-4a36-8795-1f647f80dc88,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+a52a0b0f-4096-4a36-8795-1f647f80dc88,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+a52a0b0f-4096-4a36-8795-1f647f80dc88,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+a52a0b0f-4096-4a36-8795-1f647f80dc88,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+ec79191b-c12d-430c-8ef2-1e8ec85e6469,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,55.6,Espresso Dose,,g
+ec79191b-c12d-430c-8ef2-1e8ec85e6469,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+ec79191b-c12d-430c-8ef2-1e8ec85e6469,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+ec79191b-c12d-430c-8ef2-1e8ec85e6469,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+ec79191b-c12d-430c-8ef2-1e8ec85e6469,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+8b376545-b97c-43e6-88fa-f44e5c2f9aea,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,55.9,Espresso Dose,,g
+8b376545-b97c-43e6-88fa-f44e5c2f9aea,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+8b376545-b97c-43e6-88fa-f44e5c2f9aea,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+8b376545-b97c-43e6-88fa-f44e5c2f9aea,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+8b376545-b97c-43e6-88fa-f44e5c2f9aea,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+7e096f20-8042-475b-8680-c49dbd5a2b56,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,54.6,Espresso Dose,,g
+7e096f20-8042-475b-8680-c49dbd5a2b56,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+7e096f20-8042-475b-8680-c49dbd5a2b56,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+7e096f20-8042-475b-8680-c49dbd5a2b56,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+7e096f20-8042-475b-8680-c49dbd5a2b56,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+618f6e66-9c1e-4341-996c-5807cb9ad246,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,56.7,Espresso Dose,,g
+618f6e66-9c1e-4341-996c-5807cb9ad246,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+618f6e66-9c1e-4341-996c-5807cb9ad246,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+618f6e66-9c1e-4341-996c-5807cb9ad246,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+618f6e66-9c1e-4341-996c-5807cb9ad246,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,56.8,Espresso Dose,,g
+c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+c01aca15-6c16-4fdc-8834-29ae9fd81c3e,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+c01aca15-6c16-4fdc-8834-29ae9fd81c3e,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+81453a8a-7197-4f0b-838e-06eac879ce69,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,52.4,Espresso Dose,,g
+81453a8a-7197-4f0b-838e-06eac879ce69,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+81453a8a-7197-4f0b-838e-06eac879ce69,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+81453a8a-7197-4f0b-838e-06eac879ce69,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+81453a8a-7197-4f0b-838e-06eac879ce69,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,52.4,Espresso Dose,,g
+c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+c0884ebe-b56f-4fdb-b593-7f09d5b031d6,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+c0884ebe-b56f-4fdb-b593-7f09d5b031d6,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+277feb34-5037-45b6-9c6f-863cb1b03128,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,56.3,Espresso Dose,,g
+277feb34-5037-45b6-9c6f-863cb1b03128,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+277feb34-5037-45b6-9c6f-863cb1b03128,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+277feb34-5037-45b6-9c6f-863cb1b03128,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+277feb34-5037-45b6-9c6f-863cb1b03128,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,55.7,Espresso Dose,,g
+e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+e84000f5-764c-4d5f-8e9d-f8eb3ac44189,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+e84000f5-764c-4d5f-8e9d-f8eb3ac44189,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,55.4,Espresso Dose,,g
+da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+da6b59a1-d8b7-48cb-a80c-715bbe8f87c3,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+7c96d084-df95-44c4-93e4-3c624c6f88eb,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,54.6,Espresso Dose,,g
+7c96d084-df95-44c4-93e4-3c624c6f88eb,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+7c96d084-df95-44c4-93e4-3c624c6f88eb,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+7c96d084-df95-44c4-93e4-3c624c6f88eb,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+7c96d084-df95-44c4-93e4-3c624c6f88eb,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+da1b6753-b0e2-43ee-b028-d78472fc2cff,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,57.4,Espresso Dose,,g
+da1b6753-b0e2-43ee-b028-d78472fc2cff,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+da1b6753-b0e2-43ee-b028-d78472fc2cff,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+da1b6753-b0e2-43ee-b028-d78472fc2cff,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+da1b6753-b0e2-43ee-b028-d78472fc2cff,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+10bc7b67-0b59-4a80-902d-812205541ab7,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,56,Espresso Dose,,g
+10bc7b67-0b59-4a80-902d-812205541ab7,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+10bc7b67-0b59-4a80-902d-812205541ab7,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+10bc7b67-0b59-4a80-902d-812205541ab7,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+10bc7b67-0b59-4a80-902d-812205541ab7,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs
+0ac14965-ff6c-4fc3-a8b1-33a8417550c4,Lavazza Espresso Gran Crema Beans,Costco,2025-10-27,18,54.2,Espresso Dose,,g
+0ac14965-ff6c-4fc3-a8b1-33a8417550c4,Cafelat Robot,Cafune,,1,,Espresso Maker,,pcs
+0ac14965-ff6c-4fc3-a8b1-33a8417550c4,Robot Paper Filters,Cafune,,1,,Accessories,,pcs
+0ac14965-ff6c-4fc3-a8b1-33a8417550c4,Subminimal Flick WDT Tool,Cafune,,1,,Accessories,,pcs
+0ac14965-ff6c-4fc3-a8b1-33a8417550c4,notNeutral VERO Espresso Glass,Eight Ounce Coffee,,1,,Cup,,pcs

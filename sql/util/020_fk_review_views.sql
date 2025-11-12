@@ -164,7 +164,7 @@ LEFT JOIN core.vendors      cv
 	ON cv.vendor_name = p.vendor_name
 LEFT JOIN ref.product_types pt
 	ON pt.product_type_name = p.product_type
-JOIN core.products          cp
+LEFT JOIN core.products          cp
 	ON p.product_name = cp.product_name
 	AND cp.vendor_id = cv.vendor_id
 	AND cp.product_type_id = pt.product_type_id

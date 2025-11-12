@@ -55,13 +55,12 @@ def main():
             water_type = st.radio(
                 'Water Type',
                 ('Filtered', 'Tap', 'Spring'),
-                index=None
             )
             session_type = st.radio(
                 'Session Type',
                 ('Coffee', 'Tea'),
-                index=None,
             )
+
 
         with col2:
             session_date = st.date_input('Session Date', format='YYYY-MM-DD')
@@ -70,23 +69,20 @@ def main():
             session_location_name = st.selectbox(
                 'Session Location Name',
                 ('House', 'Shop', 'Outdoors', 'Work', 'Ceremonial'),
-                index=None,
-                placeholder='Select session location...',
             )
             location_name = st.selectbox(
                 'Session Location Name',
                 ('Quebec Ave', 'Mom\'s'),
-                index=None,
-                placeholder='Select location...',
+                index=0
             )
 
         with col3:
             brew_method = st.selectbox(
                 'Brew Method',
                 ('Espresso', 'Western', 'Gongfu', 'Grandpa', 'Kyusu', 'Cold Brew', 'Matcha', 'Filter', 'Moka', 'Pour Over'),
-                index=None,
                 placeholder='Select brew method...',
             )
+
             grind_size = st.number_input('Grind Size', min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
             extraction_number = 1
             extraction_time = st.number_input('Extraction Time', min_value=0, step=1, max_value=10000)
@@ -114,24 +110,23 @@ def main():
             ingredient_name = st.selectbox(
                 'Product Name',
                 ingredient_ref_table['name'].unique().tolist(),
-                index=None,
+                index=1,
                 placeholder='Select product...'
             )
             ingredient_vendor_name = st.selectbox(
                 'Vendor Name',
                 ingredient_ref_table['vendor'].unique().tolist(),
-                index=None,
+                index=1,
                 placeholder='Select vendor...'
             )
-            production_date = st.date_input('Production Date', min_value='1990-01-01', format='YYYY-MM-DD')
+            production_date = st.date_input('Production Date', value='2025-10-27', min_value='1990-01-01', format='YYYY-MM-DD')
 
         with col2:
             role_ingredient = st.radio(
                 'Role',
                 ('Espresso Dose', 'Tea Dose'),
-                index=None
             )
-            quantity_in = st.number_input('Quantity Used', min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
+            quantity_in = st.number_input('Quantity Used', value=18.0, min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
             quantity_output = st.number_input('Quantity Out', min_value=0.0, max_value=1000.0, step=0.1, format='%0.1f')
 
         new_ingredient_rows = pd.DataFrame([{
@@ -292,7 +287,7 @@ def main():
             st.session_state['session_batch_inventory'] = pd.concat([st.session_state['session_batch_inventory'], new_sbi_rows],
                                                         ignore_index=True)
             st.session_state['session_batch_inventory'].to_csv(f'{csv_file_path}/session_batch_inventory.csv', index=False)
-            st.success('Session batch inventory rows added!')
+            st.success('Successfully added session batch inventory rows!')
 
     if choice == 'Add Product':
         st.header('Add Product')

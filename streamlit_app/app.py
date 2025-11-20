@@ -44,13 +44,26 @@ def main():
         if 'session_code' not in st.session_state:
             st.session_state['session_code'] = uuid.uuid4() # 'TEST'
 
-        st.subheader('General Information')
+        st.subheader('Required Information')
         st.info(f'Session code: {st.session_state.session_code}')
 
-        col1, col2, col3 = st.columns(3)
+        rating = st.slider('Rating', min_value=0, step=1, max_value=10)
 
+        col1, col2 = st.columns(2)
         with col1:
-            rating = st.slider('Rating', min_value=0, step=1, max_value=10)
+            grind_size = st.number_input('Grind Size', min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
+            extraction_time = st.number_input('Extraction Time', min_value=0, step=1, max_value=10000)
+            session_notes = st.text_area('Session Notes', '', height=50)
+
+        with col2:
+            water_temperature = st.number_input('Water Temperature', min_value=0, step=1, max_value=100)
+            quantity_output = st.number_input('Quantity Out', min_value=0.0, max_value=1000.0, step=0.1, format='%0.1f')
+            extraction_notes = st.text_area('Extraction Notes', '', height=50)
+
+        st.subheader('General Information')
+
+        col1, col2 = st.columns(2)
+        with col1:
             favorite_flag = st.checkbox('Favorite Flag')
             water_type = st.radio(
                 'Water Type',
@@ -60,6 +73,14 @@ def main():
                 'Session Type',
                 ('Coffee', 'Tea'),
             )
+
+            brew_method = st.selectbox(
+                'Brew Method',
+                ('Espresso', 'Western', 'Gongfu', 'Grandpa', 'Kyusu', 'Cold Brew', 'Matcha', 'Filter', 'Moka', 'Pour Over'),
+                placeholder='Select brew method...',
+            )
+
+            extraction_number = 1
 
 
         with col2:
@@ -76,27 +97,6 @@ def main():
                 index=0
             )
 
-        with col3:
-            brew_method = st.selectbox(
-                'Brew Method',
-                ('Espresso', 'Western', 'Gongfu', 'Grandpa', 'Kyusu', 'Cold Brew', 'Matcha', 'Filter', 'Moka', 'Pour Over'),
-                placeholder='Select brew method...',
-            )
-
-            grind_size = st.number_input('Grind Size', min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
-            extraction_number = 1
-            extraction_time = st.number_input('Extraction Time', min_value=0, step=1, max_value=10000)
-            water_temperature = st.number_input('Water Temperature', min_value=0, step=1, max_value=100)
-
-        st.subheader('Notes')
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            session_notes = st.text_area('Session Notes', '', height=50)
-
-        with col2:
-            extraction_notes = st.text_area('Extraction Notes', '', height=50)
 
         ingredient_ref_table = reference_table[reference_table['type'].isin(['Tea', 'Coffee'])].sort_values(['type', 'name'])
 
@@ -127,7 +127,6 @@ def main():
                 ('Espresso Dose', 'Tea Dose'),
             )
             quantity_in = st.number_input('Quantity Used', value=18.0, min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
-            quantity_output = st.number_input('Quantity Out', min_value=0.0, max_value=1000.0, step=0.1, format='%0.1f')
 
         new_ingredient_rows = pd.DataFrame([{
             'session_code': st.session_state.session_code,
@@ -150,7 +149,13 @@ def main():
             st.session_state.equip_ref_table = equip_ref_table
 
         if 'entries' not in st.session_state:
-            st.session_state.entries = []  # <-- this line prevents that AttributeError
+            st.session_state.entries = [
+                {"product_name": "Cafelat Robot", "vendor_name": "Cafune", "role": "Espresso Maker"},
+                {"product_name": "Robot Paper Filters", "vendor_name": "Cafune", "role": "Accessories"},
+                {"product_name": "Subminimal Flick WDT Tool", "vendor_name": "Cafune", "role": "Accessories"},
+                {"product_name": "notNeutral VERO Espresso Glass", "vendor_name": "Eight Ounce Coffee",
+                 "role": "Cup"}
+            ]
 
         # --- UI ---
         with st.expander('Show current equipment:'):
@@ -172,9 +177,8 @@ def main():
         tbl = st.session_state.equip_ref_table
         product_options = tbl['name'].unique().tolist()
         vendor_options = tbl['vendor'].unique().tolist()
-
         for i, entry in enumerate(st.session_state.entries):
-            st.markdown(f'### Equipment {i + 1}')
+            st.markdown(f'##### Item {i + 1} - {entry["product_name"]}')
 
             col1, col2, col3 = st.columns(3)
 
@@ -182,7 +186,7 @@ def main():
                 entry['product_name'] = st.selectbox(
                     'Product Name',
                     product_options,
-                    index=0,
+                    index=product_options.index(entry['product_name']),
                     key=f'product_{i}'
                 )
 
@@ -190,15 +194,17 @@ def main():
                 entry['vendor_name'] = st.selectbox(
                     'Vendor Name',
                     vendor_options,
-                    index=0,
+                    index=vendor_options.index(entry['vendor_name']),
                     key=f'vendor_{i}'
                 )
+
+            role_options = ('Accessories', 'Cup', 'Kettle', 'Teapot', 'Gongfu', 'Faircup', 'Espresso Maker')
 
             with col3:
                 entry['role'] = st.selectbox(
                     'Role',
-                    ('Accessories', 'Cup', 'Kettle', 'Teapot', 'Gongfu', 'Faircup', 'Espresso Maker'),
-                    index=0,
+                    role_options,
+                    index=role_options.index(entry['role']),
                     key=f'role_{i}'
                 )
 

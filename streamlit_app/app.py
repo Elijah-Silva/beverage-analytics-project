@@ -265,7 +265,7 @@ def main():
             if rating == 0:
                 st.error(f'**Missing rating!**')
                 st.stop()
-                
+
             if missing_session_data:
                 st.error(f'**Missing session data:** {", ".join(missing_session_data)}')
                 st.stop()

@@ -104,4 +104,4 @@ $PSQL -f "$SQL_DIR/util/100_inv_view.sql"
 echo "----------------------"
 echo "-- Recent sessions  --"
 echo ""
-$PSQL -f "$SQL_DIR/util/110_session_view.sql"
+$PSQL -f "$SQL_DIR/util/110_session_view.sql" | { head -n 2; tail -n 5; }

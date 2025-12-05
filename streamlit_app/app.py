@@ -9,7 +9,7 @@ st.sidebar.image('img/bev.jpg', width='stretch')
 activity = ['Log Brew', 'Product Table', 'Add Product', 'Add Vendor', 'Add Order']
 choice = st.sidebar.selectbox('Menu', activity)
 
-csv_file_path = '/Users/elijahsilva/projects/beverage-analytics-project/data/raw'
+csv_file_path = '/home/elijah/beverage-analytics-project/data'
 
 # Load CSVs
 df_products = pd.read_csv(csv_file_path + '/products.csv')  # columns: product_name, vendor_name

@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SQL_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"   # -> /sql
-PSQL="psql -d beverage -v ON_ERROR_STOP=1 -q"
+PSQL="sudo -u postgres psql -d beverage -v ON_ERROR_STOP=1 -q"
 
 echo " -----------------------------------------------------"
 echo "|                                                     |"

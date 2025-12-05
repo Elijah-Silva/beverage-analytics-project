@@ -2,5 +2,5 @@ SET SEARCH_PATH = raw;
 
 -- Seed country codes
 COPY orders (vendor_name, order_date, order_number, shipping_cost, total_cost, order_status)
-FROM '/home/elijah/beverage-analytics-project/data/raw/orders.csv'
+FROM '/home/elijah/beverage/data/raw/orders.csv'
 DELIMITER ',' CSV HEADER;

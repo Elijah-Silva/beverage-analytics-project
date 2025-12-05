@@ -5,11 +5,10 @@ import uuid
 
 st.set_page_config(page_title='Beverage Web App', page_icon=':tea:', layout='centered', initial_sidebar_state='auto')
 
-st.sidebar.image('img/bev.jpg', width='stretch')
 activity = ['Log Brew', 'Product Table', 'Add Product', 'Add Vendor', 'Add Order']
 choice = st.sidebar.selectbox('Menu', activity)
 
-csv_file_path = '/home/elijah/beverage-analytics-project/data'
+csv_file_path = '/home/elijah/beverage-analytics-project/data/raw'
 
 # Load CSVs
 df_products = pd.read_csv(csv_file_path + '/products.csv')  # columns: product_name, vendor_name

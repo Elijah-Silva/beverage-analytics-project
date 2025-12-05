@@ -13,7 +13,7 @@ import uuid
 st.set_page_config(page_title='Beverage Web App', page_icon=':coffee:', layout='centered', initial_sidebar_state='auto')
 
 # App config
-csv_file_path = '/home/elijah/beverage-analytics-project/data/raw'
+csv_file_path = '/home/elijah/beverage/data/raw'
 role_options = ('Accessories', 'Cup', 'Kettle', 'Teapot', 'Gongfu', 'Faircup', 'Espresso Maker')
 
 # Create ingredient & equipment reference table

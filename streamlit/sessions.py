@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-csv_file_path = '/home/elijah/beverage-analytics-project/data/raw'
+csv_file_path = '/home/elijah/beverage/data/raw'
 
 # Load CSVs
 df_sessions = pd.read_csv(csv_file_path + '/sessions.csv') 

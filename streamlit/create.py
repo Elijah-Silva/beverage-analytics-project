@@ -16,30 +16,36 @@ st.set_page_config(page_title='Beverage Web App', page_icon=':coffee:', layout='
 csv_file_path = '/home/elijah/beverage/data/raw'
 role_options = ('Accessories', 'Cup', 'Kettle', 'Teapot', 'Gongfu', 'Faircup', 'Espresso Maker')
 
-# Create ingredient & equipment reference table
-df_products = pd.read_csv(csv_file_path + '/products.csv')  # columns: product_name, vendor_name
-df_order_items = pd.read_csv(csv_file_path + '/order_items.csv')  # columns: product_name, product_date, order_number
-df_orders = pd.read_csv(csv_file_path + '/orders.csv')  # columns: vendor_name, order_number
-
-## Merge to get vendor_name for each order_item
-df = df_order_items.merge(df_orders, on='order_number', how='left').merge(df_products, on='product_name', how='left')
-
-## Get distinct combinations
-reference_table = (df[['product_name', 'product_type_name', 'vendor_name_x', 'production_date']].drop_duplicates()
-                   .sort_values(['product_type_name', 'product_name', 'vendor_name_x', 'production_date']).reset_index(drop=True)
-                   .rename(columns={'product_name': 'name',
-                                    'product_type_name': 'type',
-                                    'vendor_name_x': 'vendor',
-                                    'production_date': 'production date', }))
-
-## Create reference tables
-ingredient_ref_table = reference_table[reference_table['type'].isin(['Tea', 'Coffee'])].sort_values(['type', 'name'])
-equip_ref_table = reference_table[reference_table['type'] == 'Equipment'].drop(columns=['production date', 'type'])
-
-# Read csv files into session state dict
-for name in ['sessions', 'products', 'session_batch_inventory', 'extractions', 'order_items']:
-    if 'name' not in st.session_state:
-        st.session_state[name] = pd.read_csv(f'{csv_file_path}/{name}.csv')
+@st.cache_data
+def load_reference_tables(csv_file_path):
+    """Load and prepare reference tables for ingredients and equipment"""
+    df_products = pd.read_csv(csv_file_path + '/products.csv')
+    df_order_items = pd.read_csv(csv_file_path + '/order_items.csv')
+    df_orders = pd.read_csv(csv_file_path + '/orders.csv')
+    
+    df = df_order_items.merge(
+        df_orders[['order_number']], 
+        on='order_number', 
+        how='left'
+    ).merge(
+        df_products, 
+        on='product_name', 
+        how='left'
+    )
+    
+    reference_table = (df[['product_name', 'product_type_name', 'vendor_name', 'production_date']]
+                       .drop_duplicates()
+                       .sort_values(['product_type_name', 'product_name', 'vendor_name', 'production_date'])
+                       .reset_index(drop=True)
+                       .rename(columns={'product_name': 'name',
+                                        'product_type_name': 'type',
+                                        'vendor_name': 'vendor',
+                                        'production_date': 'production date'}))
+    
+    ingredient_ref_table = reference_table[reference_table['type'].isin(['Tea', 'Coffee'])].sort_values(['type', 'name'])
+    equip_ref_table = reference_table[reference_table['type'] == 'Equipment'].drop(columns=['production date', 'type'])
+    
+    return ingredient_ref_table, equip_ref_table
 
 def main():
     st.title('Log Brew')
@@ -47,17 +53,32 @@ def main():
     if 'session_code' not in st.session_state:
         st.session_state['session_code'] = uuid.uuid4()
 
+    st.caption(f'Session: {st.session_state.session_code}')
+
+     # Load reference tables (cached)
+    ingredient_ref_table, equip_ref_table = load_reference_tables(csv_file_path)
+
+    # Initialize session state CSVs
+    for name in ['sessions', 'products', 'session_batch_inventory', 'extractions', 'order_items']:
+        if 'name' not in st.session_state:
+            st.session_state[name] = pd.read_csv(f'{csv_file_path}/{name}.csv')
+        
+    # Show success message if data was just saved
+    if st.session_state.get('save_success', False):
+        st.success('✅ Successfully saved all brewing data!')
+        st.session_state['save_success'] = False
+
     rating = st.slider('Rating', min_value=0, step=1, max_value=10)
 
     col1, col2 = st.columns(2)
     with col1:
-        grind_size = st.number_input('Grind Size', min_value=0.0, max_value=30.0, step=0.1, format='%0.1f')
-        extraction_time = st.number_input('Extraction Time', min_value=0, step=1, max_value=10000)
+        grind_size = st.number_input('Grind Size', value=None, min_value=0.1, max_value=30.0, step=0.1, format='%0.1f')
+        extraction_time = st.number_input('Extraction Time', value=None, min_value=1, step=1, max_value=10000)
         session_notes = st.text_area('Session Notes', '', height=50)
 
     with col2:
-        water_temperature = st.number_input('Water Temperature', min_value=0, step=1, max_value=100)
-        quantity_output = st.number_input('Quantity Out', min_value=0.0, max_value=1000.0, step=0.1, format='%0.1f')
+        water_temperature = st.number_input('Water Temperature', value=None, min_value=1, step=1, max_value=100)
+        quantity_output = st.number_input('Quantity Out', value=None, min_value=0.1, max_value=1000.0, step=0.1, format='%0.1f')
         extraction_notes = st.text_area('Extraction Notes', '', height=50)
 
     with st.expander('Edit additional details'):
@@ -142,8 +163,8 @@ def main():
         # Equipment section
         st.subheader('Equipment')
 
-        if 'equip_ref_table' not in st.session_state:
-            st.session_state.equip_ref_table = equip_ref_table
+        with st.expander('Show current equipment:'):
+            st.write(equip_ref_table)
 
         if 'entries' not in st.session_state:
             st.session_state.entries = [
@@ -155,7 +176,7 @@ def main():
             ]
 
         with st.expander('Show current equipment:'):
-            st.write(st.session_state.equip_ref_table)
+            st.write(equip_ref_table)
 
         def add_entry():
             st.session_state.entries.append({
@@ -165,10 +186,11 @@ def main():
             })
 
         def remove_entry():
-            st.session_state.entries.pop()
+            if len(st.session_state.entries) > 1:  # Keep at least one
+                st.session_state.entries.pop()
 
         # --- Dynamic input rows ---
-        tbl = st.session_state.equip_ref_table
+        tbl = equip_ref_table
         product_options = tbl['name'].unique().tolist()
         vendor_options = tbl['vendor'].unique().tolist()
         for i, entry in enumerate(st.session_state.entries):
@@ -230,7 +252,25 @@ def main():
         with col2:
             st.button('Remove Equipment', on_click=remove_entry, width='stretch')
 
-    st.info(f'Session code: {st.session_state.session_code}')
+    # Add preview section
+    with st.expander('Preview data before saving', expanded=False):
+        st.subheader('Session Data')
+        preview_session = pd.DataFrame([[st.session_state['session_code'],
+                                        brew_method, rating, water_type, session_type,
+                                        session_datetime, favorite_flag, session_location_name,
+                                        location_name, grind_size, session_notes]],
+                                    columns=st.session_state['sessions'].columns)
+        st.dataframe(preview_session)
+        
+        st.subheader('Extraction Data')
+        preview_extraction = pd.DataFrame([[st.session_state['session_code'],
+                                            extraction_number, extraction_time, 
+                                            water_temperature, extraction_notes]],
+                                        columns=st.session_state['extractions'].columns)
+        st.dataframe(preview_extraction)
+        
+        st.subheader('Session Batch Inventory Data')
+        st.dataframe(new_sbi_rows)
 
     if st.button('Add new rows to csv(s)', width='stretch', type='primary'):
 
@@ -249,13 +289,21 @@ def main():
 
         required_extraction = {
             'extraction number': extraction_number,
-            'extraction time': extraction_time if extraction_time > 0 else None,
-            'water temperature': water_temperature if water_temperature > 0 else None,
+            'extraction time': extraction_time,
+            'water temperature': water_temperature,
         }
         missing_extraction_data = [k for k, v in required_extraction.items() if v is None]
 
         if rating == 0:
             st.error(f'**Missing rating!**')
+            st.stop()
+
+        if grind_size is None:
+            st.error(f'**Missing grind size!**')
+            st.stop()
+
+        if quantity_output is None:
+            st.error(f'**Missing quantity out!**')
             st.stop()
 
         if missing_session_data:
@@ -266,31 +314,60 @@ def main():
             st.error(f'**Missing extractions data:** {", ".join(missing_extraction_data)}')
             st.stop()
 
-        # Add new rows to csv
-        new_session_row = pd.DataFrame([[st.session_state['session_code'],
+        # Save sessions
+        try:
+            # Create the new row
+            new_session_row = pd.DataFrame([[st.session_state['session_code'],
                                             *required_session.values(),
                                             grind_size,
                                             session_notes]],
                                         columns=st.session_state['sessions'].columns)
-        st.session_state['sessions'] = pd.concat([st.session_state['sessions'], new_session_row],
-                                                    ignore_index=True)
-        st.session_state['sessions'].to_csv(f'{csv_file_path}/sessions.csv', index=False)
-        st.success('Successfully added session rows!')
+            
+            # Combine into updated dataframe
+            updated_sessions = pd.concat([st.session_state['sessions'], new_session_row], ignore_index=True)
+            
+            # Write to CSV first
+            updated_sessions.to_csv(f'{csv_file_path}/sessions.csv', index=False)
+            
+            # Only update session state if write succeeded
+            st.session_state['sessions'] = updated_sessions
+            
+        except Exception as e:
+            st.error(f'Failed to save sessions: {e}')
+            st.stop()
 
-        new_extraction_row = pd.DataFrame([[st.session_state['session_code'],
-                                            *required_extraction.values(),
-                                            extraction_notes]],
-                                        columns=st.session_state['extractions'].columns)
-        st.session_state['extractions'] = pd.concat([st.session_state['extractions'], new_extraction_row],
-                                                    ignore_index=True)
-        st.session_state['extractions'].to_csv(f'{csv_file_path}/extractions.csv', index=False)
-        st.success('Successfully added extractions rows!')
+        # Save extractions
+        try:
+            new_extraction_row = pd.DataFrame([[st.session_state['session_code'],
+                                                *required_extraction.values(),
+                                                extraction_notes]],
+                                            columns=st.session_state['extractions'].columns)
+            
+            updated_extractions = pd.concat([st.session_state['extractions'], new_extraction_row], ignore_index=True)
+            
+            updated_extractions.to_csv(f'{csv_file_path}/extractions.csv', index=False)
+            
+            st.session_state['extractions'] = updated_extractions
+            
+        except Exception as e:
+            st.error(f'Failed to save extractions: {e}')
+            st.stop()
 
+        # Save session batch inventory
+        try:
+            updated_sbi = pd.concat([st.session_state['session_batch_inventory'], new_sbi_rows], ignore_index=True)
+            
+            updated_sbi.to_csv(f'{csv_file_path}/session_batch_inventory.csv', index=False)
+            
+            st.session_state['session_batch_inventory'] = updated_sbi
+            
+        except Exception as e:
+            st.error(f'Failed to save session batch inventory: {e}')
+            st.stop()
 
-        st.session_state['session_batch_inventory'] = pd.concat([st.session_state['session_batch_inventory'], new_sbi_rows],
-                                                    ignore_index=True)
-        st.session_state['session_batch_inventory'].to_csv(f'{csv_file_path}/session_batch_inventory.csv', index=False)
-        st.success('Successfully added session batch inventory rows!')
+        st.session_state['save_success'] = True
+        st.session_state['session_code'] = uuid.uuid4()
+        st.rerun()
 
 if __name__ == '__main__':
     main()

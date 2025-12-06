@@ -1,4 +1,4 @@
-#!/home/elijah/beverage-analytics-project/venv/bin/python
+#!/home/elijah/beverage/venv/bin/python
 
 import pandas as pd
 import numpy
@@ -7,7 +7,7 @@ from pathlib import Path
 import shutil
 
 uuid_to_remove = sys.argv[1]
-raw_path = Path('/home/elijah/beverage-analytics-project/data/raw')
+raw_path = Path('/home/elijah/beverage/data/raw')
 
 dfs = {
     "sessions.csv": pd.read_csv(raw_path / "sessions.csv"),
